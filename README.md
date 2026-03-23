@@ -1,30 +1,6 @@
-# Disney Universal KB
+# disney-universal-kb
 
-Public Quartz site for the Orlando trip planning vault.
+Published static site output for GitHub Pages.
 
-## Stack
-
-- [Quartz 4](https://quartz.jzhao.xyz/)
-- Obsidian-flavored Markdown content under `content/`
-- GitHub Actions deployment to GitHub Pages
-
-## Local development
-
-```bash
-npm ci
-npx quartz build --serve
-```
-
-## Publish
-
-Push to `main`. GitHub Actions builds Quartz and deploys to GitHub Pages.
-
-## Site URL
-
-- <https://rodrigofalco.github.io/disney-universal-kb/>
-
-## Notes
-
-- Source notes for the public site live in `content/`
-- `Assets/` is currently excluded from the public repo to keep the site lightweight
-- Quartz already supports Obsidian-style wikilinks and related Markdown features
+- Generated locally from the private vault using Quartz
+- Includes built site files plus published assets
