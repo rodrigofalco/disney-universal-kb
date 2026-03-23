@@ -1,4 +1,11 @@
-.obsidian/
-Assets/
 .DS_Store
-Thumbs.db
+node_modules
+public
+prof
+tsconfig.tsbuildinfo
+.obsidian
+.quartz-cache
+private/
+.replit
+replit.nix
+Assets/
