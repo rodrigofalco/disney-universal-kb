@@ -26,9 +26,17 @@
       "pace": "alto",
       "status": "confirmado",
       "ticket": "No aplica",
-      "highlights": ["Estructura de vuelo confirmada", "Tramo internacional hacia Miami"],
-      "interesting": ["Llevar a mano documentos, reservas y cargadores", "Pensar el primer día en Miami/Orlando como día de supervivencia, no de productividad"],
-      "optional": ["Preparar snack y botella reutilizable para escalas largas"],
+      "highlights": [
+        "Estructura de vuelo confirmada",
+        "Tramo internacional hacia Miami"
+      ],
+      "interesting": [
+        "Llevar a mano documentos, reservas y cargadores",
+        "Pensar el primer día en Miami/Orlando como día de supervivencia, no de productividad"
+      ],
+      "optional": [
+        "Preparar snack y botella reutilizable para escalas largas"
+      ],
       "notes": "Jornada completa de viaje. Si hace falta, el detalle fino de vuelos puede vivir en logística."
     },
     {
@@ -43,27 +51,53 @@
       "pace": "medio",
       "status": "confirmado",
       "ticket": "No aplica",
-      "highlights": ["Llegada estimada a Miami 07:00", "Check-in en Surfside", "Tarde liviana y recuperación"],
-      "interesting": ["Compras básicas de llegada", "Recorrer Surfside y dejar listo lo de parques", "CityWalk solo si realmente queda energía"],
-      "optional": ["Cena temprana y dormir pronto para cuidar el arranque de IOA"],
+      "highlights": [
+        "Llegada estimada a Miami 07:00",
+        "Check-in en Surfside",
+        "Tarde liviana y recuperación"
+      ],
+      "interesting": [
+        "Compras básicas de llegada",
+        "Recorrer Surfside y dejar listo lo de parques",
+        "CityWalk solo si realmente queda energía"
+      ],
+      "optional": [
+        "Cena temprana y dormir pronto para cuidar el arranque de IOA"
+      ],
       "notes": "Mejor uso: compras básicas, descanso y CityWalk solo si hay energía."
     },
     {
       "date": "2026-04-14",
       "displayDate": "Mar 14 Apr",
-      "title": "Islands of Adventure",
+      "title": "Islands of Adventure + bonus USF opcional",
       "phase": "Universal",
-      "location": "Islands of Adventure / posible cierre en USF",
+      "location": "Islands of Adventure / USF opcional al final",
       "type": "Parque",
       "hotel": "Surfside Inn and Suites",
       "transport": "Traslado hotel ↔ Universal",
       "pace": "alto",
       "status": "aprobado",
       "ticket": "Universal Park-to-Park",
-      "highlights": ["Early Park Admission 08:00", "Prioridad: Hagrid's", "Prioridad: VelociCoaster", "Prioridad: Forbidden Journey", "Cruce por Hogwarts Express más tarde"],
-      "interesting": ["Spider-Man como headliner secundario muy fuerte", "Hulk si quieren sumar otra montaña rusa potente", "Jurassic Park River Adventure si el clima acompaña", "Hogsmeade para vivir bien la atmósfera además de las rides", "Ollivanders o algún show chico en Hogsmeade si buscan bajar intensidad"],
-      "optional": ["Skull Island si sobra tiempo", "Seuss Landing como bloque de descompresión", "Water rides solo si ese día da para mojarse"],
-      "notes": "Evitar Hogwarts Express en el pico del mediodía. Cierre más relajado en USF si conviene."
+      "highlights": [
+        "Early Park Admission 08:00",
+        "Abrir con Hagrid's",
+        "Luego VelociCoaster",
+        "Luego Forbidden Journey",
+        "Hogwarts Express recién más tarde si conviene"
+      ],
+      "interesting": [
+        "Spider-Man como headliner secundario muy fuerte",
+        "Hulk si quieren sumar otra montaña rusa potente",
+        "Jurassic Park River Adventure si el clima acompaña",
+        "Hogsmeade para vivir bien la atmósfera además de las rides",
+        "Ollivanders o algún show chico en Hogsmeade si buscan bajar intensidad"
+      ],
+      "optional": [
+        "Skull Island si sobra tiempo",
+        "Seuss Landing como bloque de descompresión",
+        "Water rides solo si ese día da para mojarse"
+      ],
+      "notes": "Plan aprobado: usar IOA Early Park Admission para Hagrid's, VelociCoaster y Forbidden Journey. Hogwarts Express queda para una transición más tardía hacia USF, no como movimiento de mediodía."
     },
     {
       "date": "2026-04-15",
@@ -77,9 +111,19 @@
       "pace": "medio",
       "status": "aprobado",
       "ticket": "No aplica",
-      "highlights": ["Compras temprano", "Día colchón", "Posible retiro de guitarra si aplica"],
-      "interesting": ["Sirve como buffer real si Universal dejó algo pendiente", "También puede absorber descanso, laundry o reorganización de equipaje"],
-      "optional": ["CityWalk liviano por la tarde", "Cena mejor que la del día de llegada"],
+      "highlights": [
+        "Compras temprano",
+        "Día colchón",
+        "Posible retiro de guitarra si aplica"
+      ],
+      "interesting": [
+        "Sirve como buffer real si Universal dejó algo pendiente",
+        "También puede absorber descanso, laundry o reorganización de equipaje"
+      ],
+      "optional": [
+        "CityWalk liviano por la tarde",
+        "Cena mejor que la del día de llegada"
+      ],
       "notes": "La mejor estructura actual es comprar primero y retirar la guitarra después, si la compra quedó hecha online."
     },
     {
@@ -94,15 +138,31 @@
       "pace": "alto",
       "status": "aprobado",
       "ticket": "Universal Park-to-Park",
-      "highlights": ["Early Park Admission 09:00", "Ventana temprana para headliners", "Mitad de día más lenta", "Re-rides y ambiente nocturno"],
-      "interesting": ["Battle at the Ministry como objetivo estrella de primera hora", "Stardust Racers como gran coaster adicional", "Monsters Unchained como uno de los mejores dark rides del parque", "Hiccup's Wing Gliders y The Untrainable Dragon si quieren balancear adrenalina con show", "Mario Kart y Mine-Cart Madness si Nintendo les interesa de verdad"],
-      "optional": ["Celestial Park para paseo y fotos", "Meet Toothless and Friends", "Le Cirque Arcanus o experiencias menos intensas si las colas fuertes explotan"],
-      "notes": "Pensado para dejar el 17 Apr más limpio para USF."
+      "highlights": [
+        "Early Park Admission 09:00",
+        "Objetivo inicial: Battle at the Ministry",
+        "Primera mitad enfocada en headliners sensibles",
+        "Mitad de día más lenta",
+        "Segunda mitad flexible con re-rides o ambientación"
+      ],
+      "interesting": [
+        "Battle at the Ministry como objetivo estrella de primera hora",
+        "Stardust Racers como gran coaster adicional",
+        "Monsters Unchained como uno de los mejores dark rides del parque",
+        "Hiccup's Wing Gliders y The Untrainable Dragon si quieren balancear adrenalina con show",
+        "Mario Kart y Mine-Cart Madness si Nintendo les interesa de verdad"
+      ],
+      "optional": [
+        "Celestial Park para paseo y fotos",
+        "Meet Toothless and Friends",
+        "Le Cirque Arcanus o experiencias menos intensas si las colas fuertes explotan"
+      ],
+      "notes": "Patrón aprobado: usar Early Park Admission para los headliners más sensibles, con Battle at the Ministry como apertura preferida. Después, bajar el ritmo al mediodía y dejar una segunda mitad más flexible."
     },
     {
       "date": "2026-04-17",
       "displayDate": "Vie 17 Apr",
-      "title": "Universal Studios Florida",
+      "title": "Universal Studios Florida + bonus IOA opcional",
       "phase": "Universal",
       "location": "Universal Studios Florida",
       "type": "Parque",
@@ -111,10 +171,26 @@
       "pace": "alto",
       "status": "aprobado",
       "ticket": "Universal Park-to-Park",
-      "highlights": ["Apertura: Gringotts", "Luego: Mummy", "Luego: Transformers", "Pausa breve de snack e hidratación", "Hogwarts Express a IOA como bonus"],
-      "interesting": ["Diagon Alley vale la pena no hacerlo solo corriendo", "MEN IN BLACK como headliner secundario muy rendidor", "E.T. Adventure como clásico suave y distinto", "Bourne Stuntacular como gran bloque indoor de mediodía", "Horror Make-Up Show como opción divertida y liviana"],
-      "optional": ["Star shows de Diagon Alley", "Helado en Florean Fortescue's", "Blues Brothers o relleno de baja intensidad si el día se afloja"],
-      "notes": "No dispersarse en rides menores al abrir. Tarde flexible con Diagon Alley y secundarios."
+      "highlights": [
+        "Apertura: Gringotts",
+        "Luego: Mummy",
+        "Luego: Transformers",
+        "Mañana concentrada en headliners USF",
+        "Hogwarts Express a IOA solo como bonus si sobra resto"
+      ],
+      "interesting": [
+        "Diagon Alley vale la pena no hacerlo solo corriendo",
+        "MEN IN BLACK como headliner secundario muy rendidor",
+        "E.T. Adventure como clásico suave y distinto",
+        "Bourne Stuntacular como gran bloque indoor de mediodía",
+        "Horror Make-Up Show como opción divertida y liviana"
+      ],
+      "optional": [
+        "Star shows de Diagon Alley",
+        "Helado en Florean Fortescue's",
+        "Blues Brothers o relleno de baja intensidad si el día se afloja"
+      ],
+      "notes": "Plan aprobado: mantener la mañana enfocada en USF con Gringotts, Mummy y Transformers. Hogwarts Express hacia IOA queda solo como bonus opcional de más tarde, no como traslado obligatorio."
     },
     {
       "date": "2026-04-18",
@@ -128,9 +204,22 @@
       "pace": "bajo",
       "status": "aprobado",
       "ticket": "No usar ticket Disney",
-      "highlights": ["Check-out de Universal", "Check-in en Pop Century", "Descanso", "Disney Springs por la tarde/noche"],
-      "interesting": ["Explorar Pop Century y Skyliner area", "Disney Springs como paseo sin quemar ticket", "Buena noche para una cena linda pero no demasiado tarde"],
-      "optional": ["Pileta", "tienda del resort", "compras puntuales en Disney Springs"],
+      "highlights": [
+        "Check-out de Universal",
+        "Check-in en Pop Century",
+        "Descanso",
+        "Disney Springs por la tarde/noche"
+      ],
+      "interesting": [
+        "Explorar Pop Century y Skyliner area",
+        "Disney Springs como paseo sin quemar ticket",
+        "Buena noche para una cena linda pero no demasiado tarde"
+      ],
+      "optional": [
+        "Pileta",
+        "tienda del resort",
+        "compras puntuales en Disney Springs"
+      ],
       "notes": "Día de transición para proteger energía. Extras opcionales: pileta, resort y cena temprana."
     },
     {
@@ -145,10 +234,28 @@
       "pace": "alto",
       "status": "aprobado",
       "ticket": "Disney 1-Park-Per-Day",
-      "highlights": ["Early Entry", "Peter Pan's Flight", "Haunted Mansion", "Pirates of the Caribbean", "Jungle Cruise", "Cierre con castillo y fuegos"],
-      "interesting": ["Seven Dwarfs Mine Train como extra valioso si entra bien temprano o con estrategia paga", "Tiana's Bayou Adventure como buena suma si quieren una ride más fuerte", "PeopleMover y Carousel of Progress como descansos inteligentes en Tomorrowland", "It's a Small World y PhilharMagic como clásicos suaves muy rendidores", "Buzz Lightyear como secundaria divertida si reabierta y operativa"],
-      "optional": ["Space Mountain si ese día pinta más thrill", "Monsters Inc. Laugh Floor", "Festival of Fantasy Parade si el horario encaja"],
-      "notes": "Big Thunder Mountain no entra como prioridad central por cierre reportado en la guía actual."
+      "highlights": [
+        "Early Entry",
+        "Clásicos de alta espera temprano",
+        "Peter Pan's Flight",
+        "Haunted Mansion",
+        "Pirates of the Caribbean",
+        "Jungle Cruise",
+        "Cierre con castillo y fuegos"
+      ],
+      "interesting": [
+        "Seven Dwarfs Mine Train como extra valioso si entra bien temprano o con estrategia paga",
+        "Tiana's Bayou Adventure como buena suma si quieren una ride más fuerte",
+        "PeopleMover y Carousel of Progress como descansos inteligentes en Tomorrowland",
+        "It's a Small World y PhilharMagic como clásicos suaves muy rendidores",
+        "Buzz Lightyear como secundaria divertida si reabierta y operativa"
+      ],
+      "optional": [
+        "Space Mountain si ese día pinta más thrill",
+        "Monsters Inc. Laugh Floor",
+        "Festival of Fantasy Parade si el horario encaja"
+      ],
+      "notes": "Magic Kingdom sigue como primer día Disney aprobado. Estrategia paga confirmada: usar Lightning Lane Single Pass donde tenga sentido dentro del plan del parque. Big Thunder queda fuera por cierre reportado."
     },
     {
       "date": "2026-04-20",
@@ -162,10 +269,26 @@
       "pace": "medio",
       "status": "aprobado",
       "ticket": "Disney 1-Park-Per-Day",
-      "highlights": ["Segundo parque Disney", "Día para combinar atracciones y paseo", "Evaluar Single Pass donde tenga sentido"],
-      "interesting": ["Remy's Ratatouille Adventure muy lógico por Skyliner/International Gateway", "Frozen Ever After como otra gran prioridad familiar", "Soarin' como secundaria premium muy rendidora", "Living with the Land y Spaceship Earth como clásicos tranquilos que suman mucho", "Flower & Garden Festival como parte real del valor del día", "Luminous si quieren cierre nocturno fuerte"],
-      "optional": ["Guardians para quien quiera el headliner más intenso", "Journey of Water", "Gran Fiesta Tour y vuelta parcial por World Showcase"],
-      "notes": "Orden aprobado dentro del bloque Disney."
+      "highlights": [
+        "Segundo parque Disney",
+        "Combinar atracciones + paseo",
+        "Lightning Lane Single Pass donde sume valor",
+        "Aprovechar Skyliner / International Gateway"
+      ],
+      "interesting": [
+        "Remy's Ratatouille Adventure muy lógico por Skyliner/International Gateway",
+        "Frozen Ever After como otra gran prioridad familiar",
+        "Soarin' como secundaria premium muy rendidora",
+        "Living with the Land y Spaceship Earth como clásicos tranquilos que suman mucho",
+        "Flower & Garden Festival como parte real del valor del día",
+        "Luminous si quieren cierre nocturno fuerte"
+      ],
+      "optional": [
+        "Guardians para quien quiera el headliner más intenso",
+        "Journey of Water",
+        "Gran Fiesta Tour y vuelta parcial por World Showcase"
+      ],
+      "notes": "EPCOT sigue como segundo parque Disney aprobado. La estrategia paga forma parte del plan de trabajo, especialmente si ayuda a proteger tiempos y caminata."
     },
     {
       "date": "2026-04-21",
@@ -179,9 +302,20 @@
       "pace": "bajo",
       "status": "aprobado",
       "ticket": "No aplica",
-      "highlights": ["Recuperación", "Pileta", "Disney Springs", "Compras livianas según energía"],
-      "interesting": ["También puede funcionar como mini día fotográfico del resort", "Sirve para lavar ropa, ordenar valijas y bajar ritmo antes de los últimos dos parques"],
-      "optional": ["Skyliner ride por paseo", "comida tranquila fuera del plan más duro"],
+      "highlights": [
+        "Recuperación",
+        "Pileta",
+        "Disney Springs",
+        "Compras livianas según energía"
+      ],
+      "interesting": [
+        "También puede funcionar como mini día fotográfico del resort",
+        "Sirve para lavar ropa, ordenar valijas y bajar ritmo antes de los últimos dos parques"
+      ],
+      "optional": [
+        "Skyliner ride por paseo",
+        "comida tranquila fuera del plan más duro"
+      ],
       "notes": "Descanso intermedio para no sobrecargar la estadía Disney."
     },
     {
@@ -196,10 +330,25 @@
       "pace": "alto",
       "status": "aprobado",
       "ticket": "Disney 1-Park-Per-Day",
-      "highlights": ["Llegar temprano", "Slinky Dog Dash como must-do", "Rise of the Resistance con Single Pass", "Tower of Terror fuera del plan base"],
-      "interesting": ["Millennium Falcon encaja muy bien después de Rise o cerca de Galaxy's Edge", "Toy Story Mania suma mucho sin castigar tanto", "Runaway Railway es muy buena secundaria si no quieren que todo sea Star Wars", "Indiana Jones y Frozen Sing-Along son excelentes bloques suaves de mediodía", "Fantasmic! puede darle un final fuerte al día si quieren cerrar tarde"],
-      "optional": ["Star Tours si toleran simuladores", "Beauty and the Beast si pisan Sunset Boulevard", "Galaxy's Edge nocturno para fotos y atmósfera"],
-      "notes": "Estructurar el resto del día alrededor del horario pago de Rise y de headliners cercanos."
+      "highlights": [
+        "Llegar temprano",
+        "Slinky Dog Dash como must-do",
+        "Rise of the Resistance con Single Pass",
+        "Tower of Terror fuera del plan base"
+      ],
+      "interesting": [
+        "Millennium Falcon encaja muy bien después de Rise o cerca de Galaxy's Edge",
+        "Toy Story Mania suma mucho sin castigar tanto",
+        "Runaway Railway es muy buena secundaria si no quieren que todo sea Star Wars",
+        "Indiana Jones y Frozen Sing-Along son excelentes bloques suaves de mediodía",
+        "Fantasmic! puede darle un final fuerte al día si quieren cerrar tarde"
+      ],
+      "optional": [
+        "Star Tours si toleran simuladores",
+        "Beauty and the Beast si pisan Sunset Boulevard",
+        "Galaxy's Edge nocturno para fotos y atmósfera"
+      ],
+      "notes": "Plan confirmado: Slinky Dog Dash es must-do y Rise of the Resistance se maneja con Lightning Lane Single Pass, no por standby. Tower of Terror queda fuera del plan base actual para Mariangeles."
     },
     {
       "date": "2026-04-23",
@@ -213,10 +362,25 @@
       "pace": "alto",
       "status": "aprobado",
       "ticket": "Disney 1-Park-Per-Day",
-      "highlights": ["Kilimanjaro Safaris temprano", "Flight of Passage con Lightning Lane", "Manejo cuidadoso de calor y sombra"],
-      "interesting": ["Na'vi River Journey como complemento natural si pisan Pandora", "Festival of the Lion King como uno de los mejores shows Disney", "Gorilla Falls y Maharajah Jungle Trek si quieren algo más contemplativo", "Kali River Rapids puede ser útil si hace mucho calor y no molesta mojarse", "Pandora al atardecer/noche suma mucho si el horario del parque acompaña"],
-      "optional": ["Finding Nemo show", "Expedition Everest solo para quien quiera una coaster intensa", "Tree of Life trails"],
-      "notes": "Arranque fuerte y luego ritmo más protegido que en otros parques Disney."
+      "highlights": [
+        "Kilimanjaro Safaris temprano",
+        "Flight of Passage con Lightning Lane",
+        "Arranque fuerte en la mañana",
+        "Manejo cuidadoso de calor y sombra"
+      ],
+      "interesting": [
+        "Na'vi River Journey como complemento natural si pisan Pandora",
+        "Festival of the Lion King como uno de los mejores shows Disney",
+        "Gorilla Falls y Maharajah Jungle Trek si quieren algo más contemplativo",
+        "Kali River Rapids puede ser útil si hace mucho calor y no molesta mojarse",
+        "Pandora al atardecer/noche suma mucho si el horario del parque acompaña"
+      ],
+      "optional": [
+        "Finding Nemo show",
+        "Expedition Everest solo para quien quiera una coaster intensa",
+        "Tree of Life trails"
+      ],
+      "notes": "Plan confirmado: Kilimanjaro Safaris es prioridad alta idealmente temprano, y Flight of Passage se resuelve con Lightning Lane en vez de depender de una standby larga. Después conviene proteger ritmo, sombra y shows/trails según energía."
     },
     {
       "date": "2026-04-24",
@@ -230,9 +394,18 @@
       "pace": "medio",
       "status": "pendiente operativo",
       "ticket": "No aplica",
-      "highlights": ["Check-out de Pop Century", "Posicionarse con margen en Miami", "Cena liviana y descanso temprano"],
-      "interesting": ["Conviene que el hotel sea simple y funcional más que aspiracional", "Ideal evitar una noche demasiado movida antes del vuelo"],
-      "optional": ["Alguna parada corta en ruta si sale con margen"],
+      "highlights": [
+        "Check-out de Pop Century",
+        "Posicionarse con margen en Miami",
+        "Cena liviana y descanso temprano"
+      ],
+      "interesting": [
+        "Conviene que el hotel sea simple y funcional más que aspiracional",
+        "Ideal evitar una noche demasiado movida antes del vuelo"
+      ],
+      "optional": [
+        "Alguna parada corta en ruta si sale con margen"
+      ],
       "notes": "La estrategia de dormir en Miami está confirmada; falta elegir el hotel exacto."
     },
     {
@@ -247,9 +420,17 @@
       "pace": "medio",
       "status": "confirmado",
       "ticket": "Vuelo confirmado",
-      "highlights": ["Salida 18:25", "Llegada 04:30 +1", "Asientos 22A y 22B"],
-      "interesting": ["Dejar bien cerrado equipaje y tiempos del rental para no meter estrés de último día"],
-      "optional": ["Comer algo antes de embarcar sin complicarse"],
+      "highlights": [
+        "Salida 18:25",
+        "Llegada 04:30 +1",
+        "Asientos 22A y 22B"
+      ],
+      "interesting": [
+        "Dejar bien cerrado equipaje y tiempos del rental para no meter estrés de último día"
+      ],
+      "optional": [
+        "Comer algo antes de embarcar sin complicarse"
+      ],
       "notes": "Conviene devolver el auto con margen y mantener el día lo más limpio posible."
     },
     {
@@ -264,9 +445,16 @@
       "pace": "medio",
       "status": "confirmado",
       "ticket": "Vuelo confirmado",
-      "highlights": ["Salida 07:15", "Último tramo del viaje"],
-      "interesting": ["Día para sobrevivir al cansancio más que para planear otra cosa"],
-      "optional": ["Nada ambicioso"],
+      "highlights": [
+        "Salida 07:15",
+        "Último tramo del viaje"
+      ],
+      "interesting": [
+        "Día para sobrevivir al cansancio más que para planear otra cosa"
+      ],
+      "optional": [
+        "Nada ambicioso"
+      ],
       "notes": "Cierre final del itinerario."
     }
   ]
