@@ -57,25 +57,12 @@ function createHero(meta, days) {
     </div>`;
 }
 
-function createTopbar(title) {
-  return `
-  <div class="topbar">
-    <div class="container">
-      <strong>${fmtText(title)}</strong>
-      <nav class="topnav">
-        <a href="./index.html">Itinerario</a>
-      </nav>
-    </div>
-  </div>`;
-}
-
 function createFooter() {
   return `<footer class="footer container">Basado en <code>docs/Itinerary.md</code> · versión estática para compartir</footer>`;
 }
 
 function renderItinerary(data) {
   document.body.innerHTML = `
-    ${createTopbar('Itinerario Orlando 2026')}
     <main>
       <section class="hero"><div class="container">${createHero(data.meta, data.days)}</div></section>
       <section class="section">
