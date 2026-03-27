@@ -19,15 +19,37 @@ function badge(text, cls = '') {
   return `<span class="badge ${cls}">${fmtText(text)}</span>`;
 }
 
+function getTripCountdown(days) {
+  const firstDay = [...days].sort((a, b) => a.date.localeCompare(b.date))[0];
+  if (!firstDay?.date) return null;
+
+  const target = new Date(`${firstDay.date}T00:00:00Z`);
+  const now = new Date();
+  const todayUtc = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
+  const targetUtc = Date.UTC(target.getUTCFullYear(), target.getUTCMonth(), target.getUTCDate());
+  return Math.round((targetUtc - todayUtc) / 86400000);
+}
+
 function createHero(meta, days) {
   const parqueDays = days.filter((d) => d.type === 'Parque').length;
   const descansoDays = days.filter((d) => d.type === 'Descanso').length;
+  const countdown = getTripCountdown(days);
+  const countdownLabel = countdown === null
+    ? 'sin fecha'
+    : countdown > 1
+      ? `faltan ${countdown} días`
+      : countdown === 1
+        ? 'falta 1 día'
+        : countdown === 0
+          ? 'el viaje empieza hoy'
+          : `viaje iniciado hace ${Math.abs(countdown)} días`;
   return `
     <div class="hero-card">
       <span class="eyebrow">🏰 Itinerario del viaje</span>
       <h1>${fmtText(meta.titulo)}</h1>
       <p class="lead">${fmtText(meta.subtitulo)} · ${fmtText(meta.rango)} · ${fmtText(meta.estado)}</p>
       <div class="stats">
+        <div class="stat countdown-stat"><strong>${fmtText(countdownLabel)}</strong><span>contador hasta el inicio</span></div>
         <div class="stat"><strong>${days.length}</strong><span>días cargados</span></div>
         <div class="stat"><strong>${parqueDays}</strong><span>jornadas de parque</span></div>
         <div class="stat"><strong>${descansoDays}</strong><span>día de descanso</span></div>
