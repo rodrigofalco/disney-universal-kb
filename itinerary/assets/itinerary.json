@@ -97,7 +97,7 @@
         "Seuss Landing como bloque de descompresión",
         "Water rides solo si ese día da para mojarse"
       ],
-      "notes": "Plan aprobado: usar IOA Early Park Admission para Hagrid's, VelociCoaster y Forbidden Journey. Hogwarts Express queda para una transición más tardía hacia USF, no como movimiento de mediodía. Recomendación park-to-park vigente: IOA → Hogwarts Express → USF, no al revés."
+      "notes": "Plan aprobado: usar IOA Early Park Admission para Hagrid's, VelociCoaster y Forbidden Journey. Hogwarts Express queda para una transición más tardía hacia USF, no como movimiento de mediodía. Recomendación park-to-park vigente: IOA → Hogwarts Express → USF, no al revés. Horarios de referencia: IOA 9:00-20:00 con EPA 8:00; USF 10:00-21:00; Epic 10:00-21:00 con EPA 9:00."
     },
     {
       "date": "2026-04-15",
@@ -157,7 +157,7 @@
         "Meet Toothless and Friends",
         "Le Cirque Arcanus o experiencias menos intensas si las colas fuertes explotan"
       ],
-      "notes": "Patrón aprobado: usar Early Park Admission para los headliners más sensibles, con Battle at the Ministry como apertura preferida. Después, bajar el ritmo al mediodía y dejar una segunda mitad más flexible."
+      "notes": "Patrón aprobado: usar Early Park Admission para los headliners más sensibles, con Battle at the Ministry como apertura preferida. Después, bajar el ritmo al mediodía y dejar una segunda mitad más flexible. Horario de referencia: Epic 10:00-21:00 con EPA 9:00."
     },
     {
       "date": "2026-04-17",
@@ -190,7 +190,7 @@
         "Helado en Florean Fortescue's",
         "Blues Brothers o relleno de baja intensidad si el día se afloja"
       ],
-      "notes": "Plan aprobado: mantener la mañana enfocada en USF con Gringotts, Mummy y Transformers. Hogwarts Express hacia IOA queda solo como bonus opcional de más tarde, no como traslado obligatorio."
+      "notes": "Plan aprobado: mantener la mañana enfocada en USF con Gringotts, Mummy y Transformers. Hogwarts Express hacia IOA queda solo como bonus opcional de más tarde, no como traslado obligatorio. Horarios de referencia: USF 8:00-18:00; IOA 8:00-18:00 con EPA 7:00; Epic 10:00-21:00 con EPA 9:00."
     },
     {
       "date": "2026-04-18",
@@ -241,6 +241,7 @@
         "Usar el domingo en un parque más manejable que Magic Kingdom"
       ],
       "interesting": [
+        "Early Entry 7:30-8:00 y horario de parque 8:00-20:00",
         "Pandora temprano sigue siendo muy valiosa",
         "Kilimanjaro Safaris debería mantenerse como ancla fuerte del día",
         "Everest queda explícitamente en juego dentro de la recomendación de Sergio",
@@ -251,7 +252,7 @@
         "trails y zonas de sombra según calor",
         "revisar más cerca de la fecha si Flight of Passage merece compra aparte"
       ],
-      "notes": "Cambio aprobado tras charla con Sergio: usar Animal Kingdom el domingo para evitar el peor impacto de multitudes en Magic Kingdom. La recomendación base de Sergio para LLMP es Na'vi River Journey, Expedition Everest y Kilimanjaro Safaris."
+      "notes": "Cambio aprobado tras charla con Sergio: usar Animal Kingdom el domingo para evitar el peor impacto de multitudes en Magic Kingdom. La recomendación base de Sergio para LLMP es Na'vi River Journey, Expedition Everest y Kilimanjaro Safaris. Horarios oficiales compartidos: Early Entry 7:30-8:00 y parque 8:00-20:00. Show ancla sugerido: Festival of the Lion King."
     },
     {
       "date": "2026-04-20",
@@ -272,6 +273,8 @@
         "Intentar sumar Frozen Ever After después"
       ],
       "interesting": [
+        "Early Entry 8:30-9:00 y horario de parque 9:00-21:00",
+        "Extended Evening Hours 21:00-23:00",
         "La lógica de Sergio combina muy bien con el Skyliner / International Gateway",
         "Guardians queda protegido como headliner premium del día",
         "El bloque Test Track + Soarin' + Spaceship Earth arma una jornada bastante prolija"
@@ -281,7 +284,7 @@
         "paseo más largo por World Showcase",
         "Flower & Garden según energía y tiempos"
       ],
-      "notes": "Plan alineado con Sergio: Guardians como Single Pass, Remy por entrada temprana y LLMP con Test Track, Soarin' y Spaceship Earth. Después, intentar pivotear a Frozen si se libera una buena opción."
+      "notes": "Plan alineado con Sergio: Guardians como Single Pass, Remy por entrada temprana y LLMP con Test Track, Soarin' y Spaceship Earth. Después, intentar pivotear a Frozen si se libera una buena opción. Horarios oficiales compartidos: Early Entry 8:30-9:00, parque 9:00-21:00 y Extended Evening Hours 21:00-23:00. Cierre sugerido: Luminous."
     },
     {
       "date": "2026-04-21",
@@ -331,16 +334,18 @@
         "Tower of Terror queda fuera"
       ],
       "interesting": [
+        "Early Entry 8:30-9:00 y horario de parque 9:00-21:00",
         "La nota original de Sergio mencionaba Tower of Terror, pero se reemplaza por Alien por preferencia confirmada",
         "Sigue siendo clave cuidar bien el bloque de Toy Story Land",
-        "Rise queda como prioridad de apertura, no como compra obligatoria en esta versión"
+        "Rise queda como prioridad de apertura, no como compra obligatoria en esta versión",
+        "Fantasmic! puede servir como ancla nocturna si todavía hay energía"
       ],
       "optional": [
         "Mickey & Minnie's Runaway Railway",
         "Millennium Falcon",
         "Indiana Jones o Frozen como bloque más liviano"
       ],
-      "notes": "Versión ajustada de la recomendación de Sergio: abrir con Rise of the Resistance y usar LLMP para Slinky, Toy Story Mania y Alien Swirling Saucers. Tower of Terror queda descartada por preferencia ya confirmada."
+      "notes": "Versión ajustada de la recomendación de Sergio: abrir con Rise of the Resistance y usar LLMP para Slinky, Toy Story Mania y Alien Swirling Saucers. Tower of Terror queda descartada por preferencia ya confirmada. Horarios oficiales compartidos: Early Entry 8:30-9:00 y parque 9:00-21:00. Show nocturno a considerar: Fantasmic!."
     },
     {
       "date": "2026-04-23",
@@ -362,16 +367,18 @@
         "Evaluar TRON o Seven Dwarfs como Single Pass"
       ],
       "interesting": [
+        "Early Entry 8:30-9:00 y horario de parque 9:00-23:00",
         "Sergio remarcó que en MK importa mucho reservar bien temprano el Multi Pass",
         "Después del bloque inicial, los siguientes objetivos son Peter Pan, Jungle Cruise y Space Mountain",
-        "Mover MK fuera del domingo debería ayudar bastante con la carga de gente"
+        "Mover MK fuera del domingo debería ayudar bastante con la carga de gente",
+        "Festival of Fantasy + Happily Ever After son las anclas de entretenimiento del día"
       ],
       "optional": [
         "Castillo y cierre nocturno",
         "reacomodar Winnie/Pirates según lo que ya haya quedado tomado",
         "clásicos suaves si necesitan bajar ritmo"
       ],
-      "notes": "Cambio aprobado tras charla con Sergio: mover Magic Kingdom al jueves para evitar hacerlo en domingo. La lógica recomendada es priorizar un muy buen arranque de Multi Pass y después evaluar si TRON o Seven Dwarfs vale más la pena como Single Pass."
+      "notes": "Cambio aprobado tras charla con Sergio: mover Magic Kingdom al jueves para evitar hacerlo en domingo. La lógica recomendada es priorizar un muy buen arranque de Multi Pass y después evaluar si TRON o Seven Dwarfs vale más la pena como Single Pass. Horarios oficiales compartidos: Early Entry 8:30-9:00 y parque 9:00-23:00. Anclas del día: Festival of Fantasy Parade + Happily Ever After."
     },
     {
       "date": "2026-04-24",
