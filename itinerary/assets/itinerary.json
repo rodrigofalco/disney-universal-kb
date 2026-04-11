@@ -401,7 +401,7 @@
         "parkHours": "08:00 a 20:00"
       },
       "parkMap": {
-        "thumb": "../assets/images/ak-map.jpg",
+        "thumb": "../assets/images/ak-map-thumb.jpg",
         "full": "../assets/images/ak-map.jpg",
         "source": "WDWMagic guide map image"
       },
@@ -502,7 +502,7 @@
         "extendedEveningHours": "21:00 a 23:00"
       },
       "parkMap": {
-        "thumb": "../assets/images/epcot-map.jpg",
+        "thumb": "../assets/images/epcot-map-thumb.jpg",
         "full": "../assets/images/epcot-map.jpg",
         "source": "WDWMagic guide map image"
       },
@@ -628,7 +628,7 @@
         "parkHours": "09:00 a 21:00"
       },
       "parkMap": {
-        "thumb": "../assets/images/hs-map.jpg",
+        "thumb": "../assets/images/hs-map-thumb.jpg",
         "full": "../assets/images/hs-map.jpg",
         "source": "WDWMagic guide map image"
       },
@@ -726,7 +726,7 @@
         "parkHours": "09:00 a 23:00"
       },
       "parkMap": {
-        "thumb": "../assets/images/mk-map.jpg",
+        "thumb": "../assets/images/mk-map-thumb.jpg",
         "full": "../assets/images/mk-map.jpg",
         "source": "WDWMagic guide map image"
       },
