@@ -403,7 +403,7 @@
       "parkMap": {
         "thumb": "../assets/images/ak-map.jpg",
         "full": "../assets/images/ak-map.jpg",
-        "source": "WDWInfo park map image"
+        "source": "WDWMagic guide map image"
       },
       "attractionsList": [
         "Avatar Flight of Passage",
@@ -504,7 +504,7 @@
       "parkMap": {
         "thumb": "../assets/images/epcot-map.jpg",
         "full": "../assets/images/epcot-map.jpg",
-        "source": "WDWInfo park map image"
+        "source": "WDWMagic guide map image"
       },
       "attractionsList": [
         "Guardians of the Galaxy: Cosmic Rewind",
@@ -630,7 +630,7 @@
       "parkMap": {
         "thumb": "../assets/images/hs-map.jpg",
         "full": "../assets/images/hs-map.jpg",
-        "source": "WDWInfo park map image"
+        "source": "WDWMagic guide map image"
       },
       "attractionsList": [
         "Star Wars: Rise of the Resistance",
@@ -728,7 +728,7 @@
       "parkMap": {
         "thumb": "../assets/images/mk-map.jpg",
         "full": "../assets/images/mk-map.jpg",
-        "source": "WDWInfo park map image"
+        "source": "WDWMagic guide map image"
       },
       "attractionsList": [
         "TRON Lightcycle / Run",
