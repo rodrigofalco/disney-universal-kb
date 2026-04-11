@@ -97,7 +97,25 @@
         "Seuss Landing como bloque de descompresión",
         "Water rides solo si ese día da para mojarse"
       ],
-      "notes": "Plan aprobado: usar IOA Early Park Admission para Hagrid's, VelociCoaster y Forbidden Journey. Hogwarts Express queda para una transición más tardía hacia USF, no como movimiento de mediodía. Recomendación park-to-park vigente: IOA → Hogwarts Express → USF, no al revés. Horarios de referencia: IOA 9:00-20:00 con EPA 8:00; USF 10:00-21:00; Epic 10:00-21:00 con EPA 9:00."
+      "notes": "Plan aprobado: usar IOA Early Park Admission para Hagrid's, VelociCoaster y Forbidden Journey. Hogwarts Express queda para una transición más tardía hacia USF, no como movimiento de mediodía. Recomendación park-to-park vigente: IOA → Hogwarts Express → USF, no al revés. Horarios de referencia: IOA 9:00-20:00 con EPA 8:00; USF 10:00-21:00; Epic 10:00-21:00 con EPA 9:00.",
+      "parkMap": {
+        "thumb": "../assets/images/ioa-map.jpg",
+        "full": "../assets/images/ioa-map.jpg",
+        "source": "Universal official park map"
+      },
+      "attractionsList": [
+        "Hagrid’s Magical Creatures Motorbike Adventure",
+        "Jurassic World VelociCoaster",
+        "Harry Potter and the Forbidden Journey",
+        "The Amazing Adventures of Spider-Man",
+        "The Incredible Hulk Coaster",
+        "Jurassic Park River Adventure",
+        "Skull Island: Reign of Kong",
+        "Flight of the Hippogriff",
+        "Popeye & Bluto’s Bilge-Rat Barges",
+        "Dudley Do-Right’s Ripsaw Falls",
+        "The Cat in the Hat"
+      ]
     },
     {
       "date": "2026-04-15",
@@ -157,7 +175,25 @@
         "Meet Toothless and Friends",
         "Le Cirque Arcanus o experiencias menos intensas si las colas fuertes explotan"
       ],
-      "notes": "Patrón aprobado: usar Early Park Admission para los headliners más sensibles, con Battle at the Ministry como apertura preferida. Después, bajar el ritmo al mediodía y dejar una segunda mitad más flexible. Horario de referencia: Epic 10:00-21:00 con EPA 9:00."
+      "notes": "Patrón aprobado: usar Early Park Admission para los headliners más sensibles, con Battle at the Ministry como apertura preferida. Después, bajar el ritmo al mediodía y dejar una segunda mitad más flexible. Horario de referencia: Epic 10:00-21:00 con EPA 9:00.",
+      "parkMap": {
+        "thumb": "../assets/images/epic-map.jpg",
+        "full": "../assets/images/epic-map.jpg",
+        "source": "Universal official park map"
+      },
+      "attractionsList": [
+        "Harry Potter and the Battle at the Ministry",
+        "Stardust Racers",
+        "Monsters Unchained: The Frankenstein Experiment",
+        "Hiccup’s Wing Gliders",
+        "Mario Kart: Bowser’s Challenge",
+        "Mine-Cart Madness",
+        "Yoshi’s Adventure",
+        "Curse of the Werewolf",
+        "Dragon Racer’s Rally",
+        "Fyre Drill",
+        "Constellation Carousel"
+      ]
     },
     {
       "date": "2026-04-17",
@@ -190,7 +226,25 @@
         "Helado en Florean Fortescue's",
         "Blues Brothers o relleno de baja intensidad si el día se afloja"
       ],
-      "notes": "Plan aprobado: mantener la mañana enfocada en USF con Gringotts, Mummy y Transformers. Hogwarts Express hacia IOA queda solo como bonus opcional de más tarde, no como traslado obligatorio. Horarios de referencia: USF 8:00-18:00; IOA 8:00-18:00 con EPA 7:00; Epic 10:00-21:00 con EPA 9:00."
+      "notes": "Plan aprobado: mantener la mañana enfocada en USF con Gringotts, Mummy y Transformers. Hogwarts Express hacia IOA queda solo como bonus opcional de más tarde, no como traslado obligatorio. Horarios de referencia: USF 8:00-18:00; IOA 8:00-18:00 con EPA 7:00; Epic 10:00-21:00 con EPA 9:00.",
+      "parkMap": {
+        "thumb": "../assets/images/usf-map.jpg",
+        "full": "../assets/images/usf-map.jpg",
+        "source": "Universal official park map"
+      },
+      "attractionsList": [
+        "Harry Potter and the Escape from Gringotts",
+        "Revenge of the Mummy",
+        "TRANSFORMERS: The Ride-3D",
+        "MEN IN BLACK Alien Attack",
+        "E.T. Adventure",
+        "The Bourne Stuntacular",
+        "Despicable Me Minion Mayhem",
+        "Hollywood Rip Ride Rockit",
+        "Race Through New York Starring Jimmy Fallon",
+        "Fast & Furious – Supercharged",
+        "Hogwarts Express"
+      ]
     },
     {
       "date": "2026-04-18",
@@ -278,7 +332,26 @@
       "parkHours": {
         "earlyEntry": "07:30 a 08:00",
         "parkHours": "08:00 a 20:00"
-      }
+      },
+      "parkMap": {
+        "thumb": "../assets/images/ak-map.jpg",
+        "full": "../assets/images/ak-map.jpg",
+        "source": "Disney guide map / official park page"
+      },
+      "attractionsList": [
+        "Avatar Flight of Passage",
+        "Na’vi River Journey",
+        "Kilimanjaro Safaris",
+        "Expedition Everest",
+        "Kali River Rapids",
+        "DINOSAUR",
+        "Festival of the Lion King",
+        "Finding Nemo: The Big Blue... and Beyond!",
+        "Feathered Friends in Flight!",
+        "It’s Tough to Be a Bug!",
+        "Gorilla Falls Exploration Trail",
+        "Maharajah Jungle Trek"
+      ]
     },
     {
       "date": "2026-04-20",
@@ -337,7 +410,25 @@
         "earlyEntry": "08:30 a 09:00",
         "parkHours": "09:00 a 21:00",
         "extendedEveningHours": "21:00 a 23:00"
-      }
+      },
+      "parkMap": {
+        "thumb": "../assets/images/epcot-map.jpg",
+        "full": "../assets/images/epcot-map.jpg",
+        "source": "Disney guide map / official park page"
+      },
+      "attractionsList": [
+        "Guardians of the Galaxy: Cosmic Rewind",
+        "Remy’s Ratatouille Adventure",
+        "Frozen Ever After",
+        "Soarin’ Around the World",
+        "Test Track",
+        "Spaceship Earth",
+        "Mission: SPACE",
+        "Living with the Land",
+        "The Seas with Nemo & Friends",
+        "Journey Into Imagination With Figment",
+        "Luminous The Symphony of Us"
+      ]
     },
     {
       "date": "2026-04-21",
@@ -424,7 +515,25 @@
       "parkHours": {
         "earlyEntry": "08:30 a 09:00",
         "parkHours": "09:00 a 21:00"
-      }
+      },
+      "parkMap": {
+        "thumb": "../assets/images/hs-map.jpg",
+        "full": "../assets/images/hs-map.jpg",
+        "source": "Disney guide map / official park page"
+      },
+      "attractionsList": [
+        "Star Wars: Rise of the Resistance",
+        "Slinky Dog Dash",
+        "Toy Story Mania!",
+        "Alien Swirling Saucers",
+        "Mickey & Minnie’s Runaway Railway",
+        "Millennium Falcon: Smugglers Run",
+        "Star Tours",
+        "Rock ’n’ Roller Coaster",
+        "Fantasmic!",
+        "Indiana Jones Epic Stunt Spectacular!",
+        "For the First Time in Forever: A Frozen Sing-Along Celebration"
+      ]
     },
     {
       "date": "2026-04-23",
@@ -483,7 +592,26 @@
       "parkHours": {
         "earlyEntry": "08:30 a 09:00",
         "parkHours": "09:00 a 23:00"
-      }
+      },
+      "parkMap": {
+        "thumb": "../assets/images/mk-map.jpg",
+        "full": "../assets/images/mk-map.jpg",
+        "source": "Disney official park map"
+      },
+      "attractionsList": [
+        "TRON Lightcycle / Run",
+        "Tiana’s Bayou Adventure",
+        "Haunted Mansion",
+        "Pirates of the Caribbean",
+        "Peter Pan’s Flight",
+        "Jungle Cruise",
+        "Space Mountain",
+        "Seven Dwarfs Mine Train",
+        "Big Thunder Mountain Railroad",
+        "Buzz Lightyear’s Space Ranger Spin",
+        "Festival of Fantasy Parade",
+        "Happily Ever After"
+      ]
     },
     {
       "date": "2026-04-24",

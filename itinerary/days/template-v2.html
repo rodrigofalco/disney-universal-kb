@@ -74,6 +74,28 @@
         </div>
         {{/lightningLane}}
         
+        {{#parkMap}}
+        <div class="timeline-block">
+          <h3>Mapa del parque</h3>
+          <p class="muted">Mini mapa para ubicar secciones, atracciones y distancias relativas. Click para ampliar.</p>
+          <a class="park-map-link" href="{{full}}" target="_blank" rel="noopener noreferrer">
+            <img class="park-map-thumb" src="{{thumb}}" alt="Mapa de {{title}}" loading="lazy" />
+          </a>
+          <p class="muted park-map-source">Fuente: {{source}}</p>
+        </div>
+        {{/parkMap}}
+
+        {{#attractionsList}}
+        <details class="timeline-block collapsible-block attractions-details">
+          <summary>Lista de atracciones del parque</summary>
+          <ul class="clean attractions-list">
+            {{#attractionsList}}
+            <li>{{.}}</li>
+            {{/attractionsList}}
+          </ul>
+        </details>
+        {{/attractionsList}}
+
         {{#shows}}
         <div class="timeline-block">
           <h3>Shows y Entretenimiento</h3>
