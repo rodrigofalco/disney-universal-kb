@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Días Individuales - Itinerario Orlando 2026</title>
+  <meta name="description" content="Páginas individuales por día del itinerario Orlando 2026" />
+  <link rel="stylesheet" href="../assets/styles.v2.css" />
+</head>
+<body data-page="days-index">
+  <div class="topbar">
+    <div class="container">
+      <a href="../index.html" class="eyebrow">← Volver al itinerario completo</a>
+      <div class="topnav">
+        <a href="../../index.html">Inicio</a>
+        <a href="../index.html">Itinerario</a>
+      </div>
+    </div>
+  </div>
+  
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-card">
+          <span class="eyebrow">📅 Días Individuales</span>
+          <h1>Páginas por Día</h1>
+          <p class="lead">Accede a la información detallada de cada día del itinerario</p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="section">
+      <div class="container panel">
+        <h2>Todos los días</h2>
+        <div class="card-grid" id="days-list">
+          <!-- Days will be populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer container">
+    Basado en <code>docs/Itinerary.md</code> · versión estática para compartir
+  </footer>
+  
+  <script>
+    // Load itinerary data and populate the list
+    async function loadDaysList() {
+      try {
+        const response = await fetch('../assets/itinerary.json');
+        if (!response.ok) throw new Error('Failed to load itinerary data');
+        
+        const data = await response.json();
+        const container = document.getElementById('days-list');
+        
+        data.days.forEach(day => {
+          const dateStr = day.date.replace(/-/g, '');
+          const dayUrl = `./day-${dateStr}.html`;
+          
+          const card = document.createElement('div');
+          card.className = 'mini-card';
+          card.innerHTML = `
+            <div class="badges">
+              <span class="badge phase-${day.phase}">${day.phase}</span>
+              <span class="badge">${day.type}</span>
+            </div>
+            <h3><a href="${dayUrl}">${day.displayDate}</a></h3>
+            <p>${day.title}</p>
+          `;
+          container.appendChild(card);
+        });
+      } catch (error) {
+        console.error('Error loading days list:', error);
+        document.getElementById('days-list').innerHTML = '<p class="empty">No se pudieron cargar los días. <a href="../index.html">Volver al itinerario</a></p>';
+      }
+    }
+    
+    loadDaysList();
+  </script>
+</body>
+</html>

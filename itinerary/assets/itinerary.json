@@ -252,7 +252,33 @@
         "trails y zonas de sombra según calor",
         "revisar más cerca de la fecha si Flight of Passage merece compra aparte"
       ],
-      "notes": "Cambio aprobado tras charla con Sergio: usar Animal Kingdom el domingo para evitar el peor impacto de multitudes en Magic Kingdom. La recomendación base de Sergio para LLMP es Na'vi River Journey, Expedition Everest y Kilimanjaro Safaris. Horarios oficiales compartidos: Early Entry 7:30-8:00 y parque 8:00-20:00. Show ancla sugerido: Festival of the Lion King."
+      "notes": "Cambio aprobado tras charla con Sergio: usar Animal Kingdom el domingo para evitar el peor impacto de multitudes en Magic Kingdom. La recomendación base de Sergio para LLMP es Na'vi River Journey, Expedition Everest y Kilimanjaro Safaris. Horarios oficiales compartidos: Early Entry 7:30-8:00 y parque 8:00-20:00. Show ancla sugerido: Festival of the Lion King.",
+      "lightningLane": [
+        {
+          "attraction": "Kilimanjaro Safaris",
+          "timeWindow": "8:35-9:35",
+          "type": "Multi Pass"
+        },
+        {
+          "attraction": "Expedition Everest",
+          "timeWindow": "9:35-10:35",
+          "type": "Multi Pass"
+        },
+        {
+          "attraction": "Avatar Flight of Passage",
+          "timeWindow": "10:35-11:35",
+          "type": "Individual"
+        },
+        {
+          "attraction": "Na'vi River Journey",
+          "timeWindow": "11:35-12:35",
+          "type": "Multi Pass"
+        }
+      ],
+      "parkHours": {
+        "earlyEntry": "07:30 a 08:00",
+        "parkHours": "08:00 a 20:00"
+      }
     },
     {
       "date": "2026-04-20",
@@ -284,7 +310,34 @@
         "paseo más largo por World Showcase",
         "Flower & Garden según energía y tiempos"
       ],
-      "notes": "Plan alineado con Sergio: Guardians como Single Pass, Remy por entrada temprana y LLMP con Test Track, Soarin' y Spaceship Earth. Después, intentar pivotear a Frozen si se libera una buena opción. Horarios oficiales compartidos: Early Entry 8:30-9:00, parque 9:00-21:00 y Extended Evening Hours 21:00-23:00. Cierre sugerido: Luminous."
+      "notes": "Plan alineado con Sergio: Guardians como Single Pass, Remy por entrada temprana y LLMP con Test Track, Soarin' y Spaceship Earth. Después, intentar pivotear a Frozen si se libera una buena opción. Horarios oficiales compartidos: Early Entry 8:30-9:00, parque 9:00-21:00 y Extended Evening Hours 21:00-23:00. Cierre sugerido: Luminous.",
+      "lightningLane": [
+        {
+          "attraction": "Soarin' Around the World",
+          "timeWindow": "9:50-10:50",
+          "type": "Multi Pass"
+        },
+        {
+          "attraction": "Spaceship Earth",
+          "timeWindow": "10:50-11:50",
+          "type": "Multi Pass"
+        },
+        {
+          "attraction": "Guardians of the Galaxy",
+          "timeWindow": "11:50-12:50",
+          "type": "Individual"
+        },
+        {
+          "attraction": "Test Track",
+          "timeWindow": "12:50-13:50",
+          "type": "Multi Pass"
+        }
+      ],
+      "parkHours": {
+        "earlyEntry": "08:30 a 09:00",
+        "parkHours": "09:00 a 21:00",
+        "extendedEveningHours": "21:00 a 23:00"
+      }
     },
     {
       "date": "2026-04-21",
@@ -345,7 +398,33 @@
         "Millennium Falcon",
         "Indiana Jones o Frozen como bloque más liviano"
       ],
-      "notes": "Versión ajustada de la recomendación de Sergio: abrir con Rise of the Resistance y usar LLMP para Slinky, Toy Story Mania y Alien Swirling Saucers. Tower of Terror queda descartada por preferencia ya confirmada. Horarios oficiales compartidos: Early Entry 8:30-9:00 y parque 9:00-21:00. Show nocturno a considerar: Fantasmic!."
+      "notes": "Versión ajustada de la recomendación de Sergio: abrir con Rise of the Resistance y usar LLMP para Slinky, Toy Story Mania y Alien Swirling Saucers. Tower of Terror queda descartada por preferencia ya confirmada. Horarios oficiales compartidos: Early Entry 8:30-9:00 y parque 9:00-21:00. Show nocturno a considerar: Fantasmic!.",
+      "lightningLane": [
+        {
+          "attraction": "Alien Swirling Saucers",
+          "timeWindow": "9:30-10:30",
+          "type": "Multi Pass"
+        },
+        {
+          "attraction": "Slinky Dog Dash",
+          "timeWindow": "10:30-11:30",
+          "type": "Multi Pass"
+        },
+        {
+          "attraction": "Toy Story Mania",
+          "timeWindow": "11:30-12:30",
+          "type": "Multi Pass"
+        },
+        {
+          "attraction": "Rise of the Resistance",
+          "timeWindow": "12:30-13:30",
+          "type": "Individual"
+        }
+      ],
+      "parkHours": {
+        "earlyEntry": "08:30 a 09:00",
+        "parkHours": "09:00 a 21:00"
+      }
     },
     {
       "date": "2026-04-23",
@@ -378,7 +457,33 @@
         "reacomodar Winnie/Pirates según lo que ya haya quedado tomado",
         "clásicos suaves si necesitan bajar ritmo"
       ],
-      "notes": "Cambio aprobado tras charla con Sergio: mover Magic Kingdom al jueves para evitar hacerlo en domingo. La lógica recomendada es priorizar un muy buen arranque de Multi Pass y después evaluar si TRON o Seven Dwarfs vale más la pena como Single Pass. Horarios oficiales compartidos: Early Entry 8:30-9:00 y parque 9:00-23:00. Anclas del día: Festival of Fantasy Parade + Happily Ever After."
+      "notes": "Cambio aprobado tras charla con Sergio: mover Magic Kingdom al jueves para evitar hacerlo en domingo. La lógica recomendada es priorizar un muy buen arranque de Multi Pass y después evaluar si TRON o Seven Dwarfs vale más la pena como Single Pass. Horarios oficiales compartidos: Early Entry 8:30-9:00 y parque 9:00-23:00. Anclas del día: Festival of Fantasy Parade + Happily Ever After.",
+      "lightningLane": [
+        {
+          "attraction": "TRON Lightcycle Run",
+          "timeWindow": "9:00-10:00",
+          "type": "Individual"
+        },
+        {
+          "attraction": "Tiana's Bayou Adventure",
+          "timeWindow": "10:00-11:00",
+          "type": "Multi Pass"
+        },
+        {
+          "attraction": "Pirates of the Caribbean",
+          "timeWindow": "11:00-12:00",
+          "type": "Multi Pass"
+        },
+        {
+          "attraction": "Haunted Mansion",
+          "timeWindow": "12:00-13:00",
+          "type": "Multi Pass"
+        }
+      ],
+      "parkHours": {
+        "earlyEntry": "08:30 a 09:00",
+        "parkHours": "09:00 a 23:00"
+      }
     },
     {
       "date": "2026-04-24",
