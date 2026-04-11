@@ -354,24 +354,26 @@
       "status": "aprobado",
       "ticket": "Disney 1-Park-Per-Day",
       "highlights": [
-        "Cambio aprobado: AK en domingo en vez de MK",
-        "LLMP sugeridas por Sergio: Na'vi River Journey, Expedition Everest y Kilimanjaro Safaris",
         "Llegar temprano y proteger la mañana",
-        "Usar el domingo en un parque más manejable que Magic Kingdom"
+        "Kilimanjaro Safaris con Lightning Lane",
+        "Expedition Everest con Lightning Lane",
+        "Avatar Flight of Passage con Lightning Lane Individual",
+        "Na’vi River Journey con Lightning Lane"
       ],
       "interesting": [
         "Early Entry 7:30-8:00 y horario de parque 8:00-20:00",
         "Pandora temprano sigue siendo muy valiosa",
-        "Kilimanjaro Safaris debería mantenerse como ancla fuerte del día",
-        "Everest queda explícitamente en juego dentro de la recomendación de Sergio",
-        "Si aparece Zootopia como bloque/show asociado, tratarlo como complemento y no como reemplazo del safari"
+        "Festival of the Lion King encaja bien como ancla de media mañana o tarde",
+        "Usar trails y zonas de sombra como bloques de recuperación según calor",
+        "Si queda resto, sumar repeats o fotos en Pandora al final del día"
       ],
       "optional": [
-        "Festival of the Lion King",
-        "trails y zonas de sombra según calor",
-        "revisar más cerca de la fecha si Flight of Passage merece compra aparte"
+        "Gorilla Falls Exploration Trail",
+        "Maharajah Jungle Trek",
+        "Feathered Friends in Flight!",
+        "Bloques de sombra / descanso según energía"
       ],
-      "notes": "Cambio aprobado tras charla con Sergio: usar Animal Kingdom el domingo para evitar el peor impacto de multitudes en Magic Kingdom. La recomendación base de Sergio para LLMP es Na'vi River Journey, Expedition Everest y Kilimanjaro Safaris. Horarios oficiales compartidos: Early Entry 7:30-8:00 y parque 8:00-20:00. Show ancla sugerido: Festival of the Lion King.",
+      "notes": "Plan cerrado para Animal Kingdom: llegar temprano, cuidar la primera mitad del día y apoyarse en las reservas ya tomadas. Lightning Lane confirmadas: Kilimanjaro Safaris 8:35-9:35, Expedition Everest 9:35-10:35, Avatar Flight of Passage 10:35-11:35 y Na’vi River Journey 11:35-12:35. Horarios oficiales cargados: Early Entry 7:30-8:00 y parque 8:00-20:00.",
       "lightningLane": [
         {
           "attraction": "Kilimanjaro Safaris",
@@ -453,24 +455,25 @@
       "status": "aprobado",
       "ticket": "Disney 1-Park-Per-Day",
       "highlights": [
-        "Single Pass para Guardians of the Galaxy",
-        "Entrada temprana para Remy's Ratatouille Adventure",
-        "LLMP: Test Track, Soarin' y Spaceship Earth",
-        "Intentar sumar Frozen Ever After después"
+        "Entrar temprano por International Gateway / Skyliner si conviene",
+        "Soarin’ Around the World con Lightning Lane",
+        "Spaceship Earth con Lightning Lane",
+        "Guardians of the Galaxy con Lightning Lane Individual",
+        "Test Track con Lightning Lane"
       ],
       "interesting": [
         "Early Entry 8:30-9:00 y horario de parque 9:00-21:00",
         "Extended Evening Hours 21:00-23:00",
-        "La lógica de Sergio combina muy bien con el Skyliner / International Gateway",
-        "Guardians queda protegido como headliner premium del día",
-        "El bloque Test Track + Soarin' + Spaceship Earth arma una jornada bastante prolija"
+        "Remy y Frozen quedan como objetivos a encajar según esperas reales",
+        "World Showcase funciona bien para bajar ritmo durante la tarde",
+        "Buen parque para mezclar headliners con paseo largo"
       ],
       "optional": [
-        "Frozen Ever After si aparece ventana conveniente",
-        "paseo más largo por World Showcase",
-        "Flower & Garden según energía y tiempos"
+        "Frozen Ever After si aparece ventana razonable",
+        "Paseo más largo por World Showcase",
+        "Luminous para cierre si sigue habiendo energía"
       ],
-      "notes": "Plan alineado con Sergio: Guardians como Single Pass, Remy por entrada temprana y LLMP con Test Track, Soarin' y Spaceship Earth. Después, intentar pivotear a Frozen si se libera una buena opción. Horarios oficiales compartidos: Early Entry 8:30-9:00, parque 9:00-21:00 y Extended Evening Hours 21:00-23:00. Cierre sugerido: Luminous.",
+      "notes": "Plan cerrado para EPCOT: prioridad a las reservas ya tomadas y completar alrededor de ellas el resto del parque. Lightning Lane confirmadas: Soarin’ Around the World 9:50-10:50, Spaceship Earth 10:50-11:50, Guardians of the Galaxy 11:50-12:50 y Test Track 12:50-13:50. Horarios oficiales cargados: Early Entry 8:30-9:00, parque 9:00-21:00 y Extended Evening Hours 21:00-23:00.",
       "lightningLane": [
         {
           "attraction": "Soarin' Around the World",
@@ -579,25 +582,25 @@
       "status": "aprobado",
       "ticket": "Disney 1-Park-Per-Day",
       "highlights": [
-        "Entrada temprano para Rise of the Resistance",
-        "LLMP: Slinky Dog Dash",
-        "LLMP: Toy Story Mania",
-        "Tercera recomendación adaptada: Alien Swirling Saucers",
-        "Tower of Terror queda fuera"
+        "Llegar temprano y proteger el bloque inicial",
+        "Alien Swirling Saucers con Lightning Lane",
+        "Slinky Dog Dash con Lightning Lane",
+        "Toy Story Mania con Lightning Lane",
+        "Rise of the Resistance con Lightning Lane Individual"
       ],
       "interesting": [
         "Early Entry 8:30-9:00 y horario de parque 9:00-21:00",
-        "La nota original de Sergio mencionaba Tower of Terror, pero se reemplaza por Alien por preferencia confirmada",
-        "Sigue siendo clave cuidar bien el bloque de Toy Story Land",
-        "Rise queda como prioridad de apertura, no como compra obligatoria en esta versión",
-        "Fantasmic! puede servir como ancla nocturna si todavía hay energía"
+        "Toy Story Land queda bien cubierto con las reservas actuales",
+        "Galaxy’s Edge sigue siendo un bloque fuerte para completar sin apuro",
+        "Mickey & Minnie’s Runaway Railway puede entrar bien en media mañana o tarde",
+        "Fantasmic! sirve como posible cierre si todavía hay resto"
       ],
       "optional": [
-        "Mickey & Minnie's Runaway Railway",
-        "Millennium Falcon",
-        "Indiana Jones o Frozen como bloque más liviano"
+        "Mickey & Minnie’s Runaway Railway",
+        "Millennium Falcon: Smugglers Run",
+        "Indiana Jones o Frozen Sing-Along según energía"
       ],
-      "notes": "Versión ajustada de la recomendación de Sergio: abrir con Rise of the Resistance y usar LLMP para Slinky, Toy Story Mania y Alien Swirling Saucers. Tower of Terror queda descartada por preferencia ya confirmada. Horarios oficiales compartidos: Early Entry 8:30-9:00 y parque 9:00-21:00. Show nocturno a considerar: Fantasmic!.",
+      "notes": "Plan cerrado para Hollywood Studios: cuidar bien el arranque y ordenar el día alrededor de las reservas ya confirmadas. Lightning Lane confirmadas: Alien Swirling Saucers 9:30-10:30, Slinky Dog Dash 10:30-11:30, Toy Story Mania 11:30-12:30 y Rise of the Resistance 12:30-13:30. Horarios oficiales cargados: Early Entry 8:30-9:00 y parque 9:00-21:00.",
       "lightningLane": [
         {
           "attraction": "Alien Swirling Saucers",
@@ -677,25 +680,25 @@
       "status": "aprobado",
       "ticket": "Disney 1-Park-Per-Day",
       "highlights": [
-        "Cambio aprobado: MK se mueve a jueves",
-        "LLMP: Tiana's Bayou Adventure",
-        "LLMP: Haunted Mansion",
-        "LLMP: Pirates of the Caribbean o Winnie the Pooh",
-        "Evaluar TRON o Seven Dwarfs como Single Pass"
+        "TRON Lightcycle Run con Lightning Lane Individual",
+        "Tiana’s Bayou Adventure con Lightning Lane",
+        "Pirates of the Caribbean con Lightning Lane",
+        "Haunted Mansion con Lightning Lane",
+        "Completar luego Peter Pan, Jungle Cruise y Space Mountain según esperas"
       ],
       "interesting": [
         "Early Entry 8:30-9:00 y horario de parque 9:00-23:00",
-        "Sergio remarcó que en MK importa mucho reservar bien temprano el Multi Pass",
-        "Después del bloque inicial, los siguientes objetivos son Peter Pan, Jungle Cruise y Space Mountain",
-        "Mover MK fuera del domingo debería ayudar bastante con la carga de gente",
-        "Festival of Fantasy + Happily Ever After son las anclas de entretenimiento del día"
+        "Las reservas fuertes del día ya quedaron definidas",
+        "Fantasyland y Tomorrowland requieren ordenar bien los traslados para no caminar de más",
+        "Festival of Fantasy Parade y Happily Ever After siguen siendo anclas de entretenimiento",
+        "Vale la pena dejar margen para fotos y castillo de noche"
       ],
       "optional": [
-        "Castillo y cierre nocturno",
-        "reacomodar Winnie/Pirates según lo que ya haya quedado tomado",
-        "clásicos suaves si necesitan bajar ritmo"
+        "Seven Dwarfs Mine Train si la espera acompaña",
+        "Clásicos suaves para bajar ritmo",
+        "Cierre nocturno con castillo y fuegos"
       ],
-      "notes": "Cambio aprobado tras charla con Sergio: mover Magic Kingdom al jueves para evitar hacerlo en domingo. La lógica recomendada es priorizar un muy buen arranque de Multi Pass y después evaluar si TRON o Seven Dwarfs vale más la pena como Single Pass. Horarios oficiales compartidos: Early Entry 8:30-9:00 y parque 9:00-23:00. Anclas del día: Festival of Fantasy Parade + Happily Ever After.",
+      "notes": "Plan cerrado para Magic Kingdom: las reservas principales del día ya están resueltas y el resto se acomoda alrededor de ese bloque base. Lightning Lane confirmadas: TRON Lightcycle Run 9:00-10:00, Tiana’s Bayou Adventure 10:00-11:00, Pirates of the Caribbean 11:00-12:00 y Haunted Mansion 12:00-13:00. Horarios oficiales cargados: Early Entry 8:30-9:00 y parque 9:00-23:00. Después del bloque inicial, los siguientes buenos objetivos siguen siendo Peter Pan, Jungle Cruise y Space Mountain.",
       "lightningLane": [
         {
           "attraction": "TRON Lightcycle Run",
