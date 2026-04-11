@@ -4,21 +4,123 @@ from pathlib import Path
 root = Path('/home/rfalco/.openclaw/workspace-trip-disney/site-publish/disney-universal-kb/itinerary')
 data = json.loads((root / 'assets/itinerary.json').read_text())
 
+
 def esc(s):
     return html.escape('' if s is None else str(s), quote=True)
+
 
 def badge(text, cls=''):
     cls_attr = f' {cls}' if cls else ''
     return f'<span class="badge{cls_attr}">{esc(text)}</span>'
 
+
 def list_items(items):
     return ''.join(f'<li>{esc(x)}</li>' for x in items)
+
+
+def grouped_items(groups):
+    parts = []
+    for area, items in groups.items():
+        parts.append(f'<div class="attraction-group"><h4>{esc(area)}</h4><ul class="clean attractions-list">{list_items(items)}</ul></div>')
+    return ''.join(parts)
+
+
+def lightning_lane_html(ll):
+    cards = []
+    for x in ll:
+        cls = 'status-confirmado' if x.get('type') == 'Individual' else 'status-aprobado'
+        label = 'Individual' if x.get('type') == 'Individual' else 'Multi Pass'
+        cards.append(
+            f'<div class="mini-card"><div class="badges"><span class="badge {cls}">{label}</span>'
+            f'<span class="badge">{esc(x.get("timeWindow"))}</span></div><h4>{esc(x.get("attraction"))}</h4></div>'
+        )
+    return f'<div class="timeline-block"><h3>Lightning Lane Reservadas</h3><div class="card-grid">{"".join(cards)}</div></div>'
+
+
+LIGHTBOX_SCRIPT = """
+  <script>
+    (function () {
+      const lightbox = document.getElementById('imageLightbox');
+      if (!lightbox) return;
+      const img = lightbox.querySelector('.lightbox-image');
+      const caption = lightbox.querySelector('.lightbox-caption');
+      const openers = document.querySelectorAll('.park-map-trigger');
+      const close = () => {
+        lightbox.hidden = true;
+        img.src = '';
+        img.alt = '';
+        caption.textContent = '';
+      };
+      openers.forEach((btn) => btn.addEventListener('click', () => {
+        img.src = btn.dataset.fullSrc || '';
+        img.alt = btn.dataset.title || 'Mapa ampliado';
+        caption.textContent = btn.dataset.title || '';
+        lightbox.hidden = false;
+      }));
+      lightbox.querySelector('.lightbox-backdrop').addEventListener('click', close);
+      lightbox.querySelector('.lightbox-close').addEventListener('click', close);
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !lightbox.hidden) close();
+      });
+    })();
+  </script>
+"""
 
 for d in data['days']:
     ph = d.get('parkHours') or {}
     ll = d.get('lightningLane') or []
     park_map = d.get('parkMap')
     attractions = d.get('attractionsList') or []
+    attraction_groups = d.get('attractionGroups') or {}
+
+    detail_cards = [
+        f'<div class="detail-card"><strong>Fecha</strong><span>{esc(d["displayDate"])}</span></div>',
+        f'<div class="detail-card"><strong>Fase</strong><span>{esc(d["phase"])}</span></div>',
+        f'<div class="detail-card"><strong>Tipo</strong><span>{esc(d["type"])}</span></div>',
+        f'<div class="detail-card"><strong>Ubicación</strong><span>{esc(d["location"])}</span></div>',
+        f'<div class="detail-card"><strong>Hotel</strong><span>{esc(d["hotel"])}</span></div>',
+        f'<div class="detail-card"><strong>Transporte</strong><span>{esc(d["transport"])}</span></div>',
+    ]
+    if ph.get('earlyEntry'):
+        detail_cards.append(f'<div class="detail-card"><strong>Early Entry</strong><span>{esc(ph.get("earlyEntry"))}</span></div>')
+    if ph.get('parkHours'):
+        detail_cards.append(f'<div class="detail-card"><strong>Horario Parque</strong><span>{esc(ph.get("parkHours"))}</span></div>')
+    if ph.get('extendedEveningHours'):
+        detail_cards.append(f'<div class="detail-card"><strong>Extended Evening</strong><span>{esc(ph.get("extendedEveningHours"))}</span></div>')
+
+    park_map_html = ''
+    if park_map:
+        park_map_html = (
+            f'<div class="timeline-block"><h3>Mapa del parque</h3>'
+            f'<p class="muted">Mini mapa para ubicar secciones, atracciones y distancias relativas. Click para ampliar.</p>'
+            f'<button class="park-map-trigger" type="button" data-full-src="{esc(park_map["full"])}" data-title="Mapa de {esc(d["title"])}">'
+            f'<img class="park-map-thumb" src="{esc(park_map["thumb"])}" alt="Mapa de {esc(d["title"])}" loading="lazy" /></button>'
+            f'<p class="muted park-map-source">Fuente: {esc(park_map["source"])} </p></div>'
+        )
+
+    attractions_html = ''
+    if attraction_groups:
+        attractions_html = f'<details class="timeline-block collapsible-block attractions-details"><summary>Lista de atracciones del parque</summary>{grouped_items(attraction_groups)}</details>'
+    elif attractions:
+        attractions_html = f'<details class="timeline-block collapsible-block attractions-details"><summary>Lista de atracciones del parque</summary><ul class="clean attractions-list">{list_items(attractions)}</ul></details>'
+
+    shows_html = f'<div class="timeline-block"><h3>Shows y Entretenimiento</h3><p>{esc(d.get("shows"))}</p></div>' if d.get('shows') else ''
+    highlights_html = f'<div class="timeline-block"><h3>Prioridades del día</h3><ul class="clean">{list_items(d.get("highlights") or [])}</ul></div>' if d.get('highlights') else ''
+    interesting_html = f'<div class="timeline-block"><h3>Otras atracciones o ideas interesantes</h3><ul class="clean">{list_items(d.get("interesting") or [])}</ul></div>' if d.get('interesting') else ''
+    optional_html = f'<div class="timeline-block"><h3>Opcionales si sobra energía</h3><ul class="clean">{list_items(d.get("optional") or [])}</ul></div>' if d.get('optional') else ''
+    notes_html = f'<div class="timeline-block"><h3>Notas completas</h3><p>{esc(d.get("notes", ""))}</p></div>'
+
+    lightbox_html = """
+  <div class="image-lightbox" id="imageLightbox" hidden>
+    <button class="lightbox-backdrop" type="button" aria-label="Cerrar"></button>
+    <div class="lightbox-dialog" role="dialog" aria-modal="true" aria-label="Mapa ampliado">
+      <button class="lightbox-close" type="button" aria-label="Cerrar">×</button>
+      <img class="lightbox-image" src="" alt="" />
+      <p class="lightbox-caption"></p>
+    </div>
+  </div>
+"""
+
     html_doc = f'''<!doctype html>
 <html lang="es">
 <head>
@@ -58,42 +160,25 @@ for d in data['days']:
 
     <section class="section">
       <div class="container panel">
-        <div class="detail-grid">
-          <div class="detail-card"><strong>Fecha</strong><span>{esc(d['displayDate'])}</span></div>
-          <div class="detail-card"><strong>Fase</strong><span>{esc(d['phase'])}</span></div>
-          <div class="detail-card"><strong>Tipo</strong><span>{esc(d['type'])}</span></div>
-          <div class="detail-card"><strong>Ubicación</strong><span>{esc(d['location'])}</span></div>
-          <div class="detail-card"><strong>Hotel</strong><span>{esc(d['hotel'])}</span></div>
-          <div class="detail-card"><strong>Transporte</strong><span>{esc(d['transport'])}</span></div>
-          {f'<div class="detail-card"><strong>Early Entry</strong><span>{esc(ph.get("earlyEntry"))}</span></div>' if ph.get('earlyEntry') else ''}
-          {f'<div class="detail-card"><strong>Horario Parque</strong><span>{esc(ph.get("parkHours"))}</span></div>' if ph.get('parkHours') else ''}
-          {f'<div class="detail-card"><strong>Extended Evening</strong><span>{esc(ph.get("extendedEveningHours"))}</span></div>' if ph.get('extendedEveningHours') else ''}
-        </div>
-
-        {f'<div class="timeline-block"><h3>Lightning Lane Reservadas</h3><div class="card-grid">' + ''.join([f'<div class="mini-card"><div class="badges"><span class="badge {'status-confirmado' if x.get('type') == 'Individual' else 'status-aprobado'}">{'Individual' if x.get('type') == 'Individual' else 'Multi Pass'}</span><span class="badge">{esc(x.get("timeWindow"))}</span></div><h4>{esc(x.get("attraction"))}</h4></div>' for x in ll]) + '</div></div>' if ll else ''}
-
-        {f'<div class="timeline-block"><h3>Mapa del parque</h3><p class="muted">Mini mapa para ubicar secciones, atracciones y distancias relativas. Click para ampliar.</p><a class="park-map-link" href="{esc(park_map["full"])}" target="_blank" rel="noopener noreferrer"><img class="park-map-thumb" src="{esc(park_map["thumb"])}" alt="Mapa de {esc(d["title"])}" loading="lazy" /></a><p class="muted park-map-source">Fuente: {esc(park_map["source"])} </p></div>' if park_map else ''}
-
-        {f'<details class="timeline-block collapsible-block attractions-details"><summary>Lista de atracciones del parque</summary><ul class="clean attractions-list">{list_items(attractions)}</ul></details>' if attractions else ''}
-
-        {f'<div class="timeline-block"><h3>Shows y Entretenimiento</h3><p>{esc(d.get("shows"))}</p></div>' if d.get('shows') else ''}
-
-        {f'<div class="timeline-block"><h3>Prioridades del día</h3><ul class="clean">{list_items(d.get("highlights") or [])}</ul></div>' if d.get('highlights') else ''}
-        {f'<div class="timeline-block"><h3>Otras atracciones o ideas interesantes</h3><ul class="clean">{list_items(d.get("interesting") or [])}</ul></div>' if d.get('interesting') else ''}
-        {f'<div class="timeline-block"><h3>Opcionales si sobra energía</h3><ul class="clean">{list_items(d.get("optional") or [])}</ul></div>' if d.get('optional') else ''}
-
-        <div class="timeline-block">
-          <h3>Notas completas</h3>
-          <p>{esc(d.get('notes',''))}</p>
-        </div>
+        <div class="detail-grid">{''.join(detail_cards)}</div>
+        {lightning_lane_html(ll) if ll else ''}
+        {park_map_html}
+        {attractions_html}
+        {shows_html}
+        {highlights_html}
+        {interesting_html}
+        {optional_html}
+        {notes_html}
       </div>
     </section>
   </main>
-
+{lightbox_html}
+{LIGHTBOX_SCRIPT}
   <footer class="footer container">Basado en <code>docs/Itinerary.md</code> · versión estática para compartir</footer>
 </body>
 </html>
 '''
     out = root / 'days' / f"day-{d['date'].replace('-', '')}.html"
     out.write_text(html_doc)
+
 print(f'generated {len(data["days"])} clean day pages')

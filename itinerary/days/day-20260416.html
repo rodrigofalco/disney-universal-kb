@@ -37,37 +37,55 @@
 
     <section class="section">
       <div class="container panel">
-        <div class="detail-grid">
-          <div class="detail-card"><strong>Fecha</strong><span>Jue 16 Apr</span></div>
-          <div class="detail-card"><strong>Fase</strong><span>Universal</span></div>
-          <div class="detail-card"><strong>Tipo</strong><span>Parque</span></div>
-          <div class="detail-card"><strong>Ubicación</strong><span>Epic Universe</span></div>
-          <div class="detail-card"><strong>Hotel</strong><span>Surfside Inn and Suites</span></div>
-          <div class="detail-card"><strong>Transporte</strong><span>Traslado hotel ↔ parque</span></div>
-          
-          
-          
-        </div>
-
+        <div class="detail-grid"><div class="detail-card"><strong>Fecha</strong><span>Jue 16 Apr</span></div><div class="detail-card"><strong>Fase</strong><span>Universal</span></div><div class="detail-card"><strong>Tipo</strong><span>Parque</span></div><div class="detail-card"><strong>Ubicación</strong><span>Epic Universe</span></div><div class="detail-card"><strong>Hotel</strong><span>Surfside Inn and Suites</span></div><div class="detail-card"><strong>Transporte</strong><span>Traslado hotel ↔ parque</span></div></div>
         
-
-        <div class="timeline-block"><h3>Mapa del parque</h3><p class="muted">Mini mapa para ubicar secciones, atracciones y distancias relativas. Click para ampliar.</p><a class="park-map-link" href="../assets/images/epic-map.jpg" target="_blank" rel="noopener noreferrer"><img class="park-map-thumb" src="../assets/images/epic-map.jpg" alt="Mapa de Epic Universe" loading="lazy" /></a><p class="muted park-map-source">Fuente: Universal official park map </p></div>
-
-        <details class="timeline-block collapsible-block attractions-details"><summary>Lista de atracciones del parque</summary><ul class="clean attractions-list"><li>Harry Potter and the Battle at the Ministry</li><li>Stardust Racers</li><li>Monsters Unchained: The Frankenstein Experiment</li><li>Hiccup’s Wing Gliders</li><li>Mario Kart: Bowser’s Challenge</li><li>Mine-Cart Madness</li><li>Yoshi’s Adventure</li><li>Curse of the Werewolf</li><li>Dragon Racer’s Rally</li><li>Fyre Drill</li><li>Constellation Carousel</li></ul></details>
-
+        <div class="timeline-block"><h3>Mapa del parque</h3><p class="muted">Mini mapa para ubicar secciones, atracciones y distancias relativas. Click para ampliar.</p><button class="park-map-trigger" type="button" data-full-src="../assets/images/epic-map.jpg" data-title="Mapa de Epic Universe"><img class="park-map-thumb" src="../assets/images/epic-map.jpg" alt="Mapa de Epic Universe" loading="lazy" /></button><p class="muted park-map-source">Fuente: Universal official park map </p></div>
+        <details class="timeline-block collapsible-block attractions-details"><summary>Lista de atracciones del parque</summary><div class="attraction-group"><h4>Wizarding World / Ministry</h4><ul class="clean attractions-list"><li>Harry Potter and the Battle at the Ministry</li></ul></div><div class="attraction-group"><h4>Celestial Park</h4><ul class="clean attractions-list"><li>Stardust Racers</li><li>Constellation Carousel</li></ul></div><div class="attraction-group"><h4>Dark Universe</h4><ul class="clean attractions-list"><li>Monsters Unchained: The Frankenstein Experiment</li><li>Curse of the Werewolf</li></ul></div><div class="attraction-group"><h4>How to Train Your Dragon</h4><ul class="clean attractions-list"><li>Hiccup’s Wing Gliders</li><li>Dragon Racer’s Rally</li><li>Fyre Drill</li></ul></div><div class="attraction-group"><h4>Super Nintendo World</h4><ul class="clean attractions-list"><li>Mario Kart: Bowser’s Challenge</li><li>Mine-Cart Madness</li><li>Yoshi’s Adventure</li></ul></div></details>
         
-
         <div class="timeline-block"><h3>Prioridades del día</h3><ul class="clean"><li>Early Park Admission 09:00</li><li>Objetivo inicial: Battle at the Ministry</li><li>Primera mitad enfocada en headliners sensibles</li><li>Mitad de día más lenta</li><li>Segunda mitad flexible con re-rides o ambientación</li></ul></div>
         <div class="timeline-block"><h3>Otras atracciones o ideas interesantes</h3><ul class="clean"><li>Battle at the Ministry como objetivo estrella de primera hora</li><li>Stardust Racers como gran coaster adicional</li><li>Monsters Unchained como uno de los mejores dark rides del parque</li><li>Hiccup&#x27;s Wing Gliders y The Untrainable Dragon si quieren balancear adrenalina con show</li><li>Mario Kart y Mine-Cart Madness si Nintendo les interesa de verdad</li></ul></div>
         <div class="timeline-block"><h3>Opcionales si sobra energía</h3><ul class="clean"><li>Celestial Park para paseo y fotos</li><li>Meet Toothless and Friends</li><li>Le Cirque Arcanus o experiencias menos intensas si las colas fuertes explotan</li></ul></div>
-
-        <div class="timeline-block">
-          <h3>Notas completas</h3>
-          <p>Patrón aprobado: usar Early Park Admission para los headliners más sensibles, con Battle at the Ministry como apertura preferida. Después, bajar el ritmo al mediodía y dejar una segunda mitad más flexible. Horario de referencia: Epic 10:00-21:00 con EPA 9:00.</p>
-        </div>
+        <div class="timeline-block"><h3>Notas completas</h3><p>Patrón aprobado: usar Early Park Admission para los headliners más sensibles, con Battle at the Ministry como apertura preferida. Después, bajar el ritmo al mediodía y dejar una segunda mitad más flexible. Horario de referencia: Epic 10:00-21:00 con EPA 9:00.</p></div>
       </div>
     </section>
   </main>
+
+  <div class="image-lightbox" id="imageLightbox" hidden>
+    <button class="lightbox-backdrop" type="button" aria-label="Cerrar"></button>
+    <div class="lightbox-dialog" role="dialog" aria-modal="true" aria-label="Mapa ampliado">
+      <button class="lightbox-close" type="button" aria-label="Cerrar">×</button>
+      <img class="lightbox-image" src="" alt="" />
+      <p class="lightbox-caption"></p>
+    </div>
+  </div>
+
+
+  <script>
+    (function () {
+      const lightbox = document.getElementById('imageLightbox');
+      if (!lightbox) return;
+      const img = lightbox.querySelector('.lightbox-image');
+      const caption = lightbox.querySelector('.lightbox-caption');
+      const openers = document.querySelectorAll('.park-map-trigger');
+      const close = () => {
+        lightbox.hidden = true;
+        img.src = '';
+        img.alt = '';
+        caption.textContent = '';
+      };
+      openers.forEach((btn) => btn.addEventListener('click', () => {
+        img.src = btn.dataset.fullSrc || '';
+        img.alt = btn.dataset.title || 'Mapa ampliado';
+        caption.textContent = btn.dataset.title || '';
+        lightbox.hidden = false;
+      }));
+      lightbox.querySelector('.lightbox-backdrop').addEventListener('click', close);
+      lightbox.querySelector('.lightbox-close').addEventListener('click', close);
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !lightbox.hidden) close();
+      });
+    })();
+  </script>
 
   <footer class="footer container">Basado en <code>docs/Itinerary.md</code> · versión estática para compartir</footer>
 </body>

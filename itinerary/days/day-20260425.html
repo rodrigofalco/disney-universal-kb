@@ -37,37 +37,55 @@
 
     <section class="section">
       <div class="container panel">
-        <div class="detail-grid">
-          <div class="detail-card"><strong>Fecha</strong><span>Sáb 25 Apr</span></div>
-          <div class="detail-card"><strong>Fase</strong><span>Regreso</span></div>
-          <div class="detail-card"><strong>Tipo</strong><span>Vuelo</span></div>
-          <div class="detail-card"><strong>Ubicación</strong><span>Miami International Airport</span></div>
-          <div class="detail-card"><strong>Hotel</strong><span>En vuelo</span></div>
-          <div class="detail-card"><strong>Transporte</strong><span>Devolución de auto + vuelo AR 1303</span></div>
-          
-          
-          
-        </div>
-
+        <div class="detail-grid"><div class="detail-card"><strong>Fecha</strong><span>Sáb 25 Apr</span></div><div class="detail-card"><strong>Fase</strong><span>Regreso</span></div><div class="detail-card"><strong>Tipo</strong><span>Vuelo</span></div><div class="detail-card"><strong>Ubicación</strong><span>Miami International Airport</span></div><div class="detail-card"><strong>Hotel</strong><span>En vuelo</span></div><div class="detail-card"><strong>Transporte</strong><span>Devolución de auto + vuelo AR 1303</span></div></div>
         
-
         
-
         
-
         
-
         <div class="timeline-block"><h3>Prioridades del día</h3><ul class="clean"><li>Salida 18:25</li><li>Llegada 04:30 +1</li><li>Asientos 22A y 22B</li></ul></div>
         <div class="timeline-block"><h3>Otras atracciones o ideas interesantes</h3><ul class="clean"><li>Dejar bien cerrado equipaje y tiempos del rental para no meter estrés de último día</li></ul></div>
         <div class="timeline-block"><h3>Opcionales si sobra energía</h3><ul class="clean"><li>Comer algo antes de embarcar sin complicarse</li></ul></div>
-
-        <div class="timeline-block">
-          <h3>Notas completas</h3>
-          <p>Conviene devolver el auto con margen y mantener el día lo más limpio posible.</p>
-        </div>
+        <div class="timeline-block"><h3>Notas completas</h3><p>Conviene devolver el auto con margen y mantener el día lo más limpio posible.</p></div>
       </div>
     </section>
   </main>
+
+  <div class="image-lightbox" id="imageLightbox" hidden>
+    <button class="lightbox-backdrop" type="button" aria-label="Cerrar"></button>
+    <div class="lightbox-dialog" role="dialog" aria-modal="true" aria-label="Mapa ampliado">
+      <button class="lightbox-close" type="button" aria-label="Cerrar">×</button>
+      <img class="lightbox-image" src="" alt="" />
+      <p class="lightbox-caption"></p>
+    </div>
+  </div>
+
+
+  <script>
+    (function () {
+      const lightbox = document.getElementById('imageLightbox');
+      if (!lightbox) return;
+      const img = lightbox.querySelector('.lightbox-image');
+      const caption = lightbox.querySelector('.lightbox-caption');
+      const openers = document.querySelectorAll('.park-map-trigger');
+      const close = () => {
+        lightbox.hidden = true;
+        img.src = '';
+        img.alt = '';
+        caption.textContent = '';
+      };
+      openers.forEach((btn) => btn.addEventListener('click', () => {
+        img.src = btn.dataset.fullSrc || '';
+        img.alt = btn.dataset.title || 'Mapa ampliado';
+        caption.textContent = btn.dataset.title || '';
+        lightbox.hidden = false;
+      }));
+      lightbox.querySelector('.lightbox-backdrop').addEventListener('click', close);
+      lightbox.querySelector('.lightbox-close').addEventListener('click', close);
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !lightbox.hidden) close();
+      });
+    })();
+  </script>
 
   <footer class="footer container">Basado en <code>docs/Itinerary.md</code> · versión estática para compartir</footer>
 </body>

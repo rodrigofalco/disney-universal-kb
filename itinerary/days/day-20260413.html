@@ -37,37 +37,55 @@
 
     <section class="section">
       <div class="container panel">
-        <div class="detail-grid">
-          <div class="detail-card"><strong>Fecha</strong><span>Lun 13 Apr</span></div>
-          <div class="detail-card"><strong>Fase</strong><span>Universal</span></div>
-          <div class="detail-card"><strong>Tipo</strong><span>Traslado</span></div>
-          <div class="detail-card"><strong>Ubicación</strong><span>Miami / Orlando</span></div>
-          <div class="detail-card"><strong>Hotel</strong><span>Surfside Inn and Suites</span></div>
-          <div class="detail-card"><strong>Transporte</strong><span>Retiro de auto en MIA + manejo a Orlando</span></div>
-          
-          
-          
-        </div>
-
+        <div class="detail-grid"><div class="detail-card"><strong>Fecha</strong><span>Lun 13 Apr</span></div><div class="detail-card"><strong>Fase</strong><span>Universal</span></div><div class="detail-card"><strong>Tipo</strong><span>Traslado</span></div><div class="detail-card"><strong>Ubicación</strong><span>Miami / Orlando</span></div><div class="detail-card"><strong>Hotel</strong><span>Surfside Inn and Suites</span></div><div class="detail-card"><strong>Transporte</strong><span>Retiro de auto en MIA + manejo a Orlando</span></div></div>
         
-
         
-
         
-
         
-
         <div class="timeline-block"><h3>Prioridades del día</h3><ul class="clean"><li>Llegada estimada a Miami 07:00</li><li>Check-in en Surfside</li><li>Tarde liviana y recuperación</li></ul></div>
         <div class="timeline-block"><h3>Otras atracciones o ideas interesantes</h3><ul class="clean"><li>Compras básicas de llegada</li><li>Recorrer Surfside y dejar listo lo de parques</li><li>CityWalk solo si realmente queda energía</li></ul></div>
         <div class="timeline-block"><h3>Opcionales si sobra energía</h3><ul class="clean"><li>Cena temprana y dormir pronto para cuidar el arranque de IOA</li></ul></div>
-
-        <div class="timeline-block">
-          <h3>Notas completas</h3>
-          <p>Mejor uso: compras básicas, descanso y CityWalk solo si hay energía.</p>
-        </div>
+        <div class="timeline-block"><h3>Notas completas</h3><p>Mejor uso: compras básicas, descanso y CityWalk solo si hay energía.</p></div>
       </div>
     </section>
   </main>
+
+  <div class="image-lightbox" id="imageLightbox" hidden>
+    <button class="lightbox-backdrop" type="button" aria-label="Cerrar"></button>
+    <div class="lightbox-dialog" role="dialog" aria-modal="true" aria-label="Mapa ampliado">
+      <button class="lightbox-close" type="button" aria-label="Cerrar">×</button>
+      <img class="lightbox-image" src="" alt="" />
+      <p class="lightbox-caption"></p>
+    </div>
+  </div>
+
+
+  <script>
+    (function () {
+      const lightbox = document.getElementById('imageLightbox');
+      if (!lightbox) return;
+      const img = lightbox.querySelector('.lightbox-image');
+      const caption = lightbox.querySelector('.lightbox-caption');
+      const openers = document.querySelectorAll('.park-map-trigger');
+      const close = () => {
+        lightbox.hidden = true;
+        img.src = '';
+        img.alt = '';
+        caption.textContent = '';
+      };
+      openers.forEach((btn) => btn.addEventListener('click', () => {
+        img.src = btn.dataset.fullSrc || '';
+        img.alt = btn.dataset.title || 'Mapa ampliado';
+        caption.textContent = btn.dataset.title || '';
+        lightbox.hidden = false;
+      }));
+      lightbox.querySelector('.lightbox-backdrop').addEventListener('click', close);
+      lightbox.querySelector('.lightbox-close').addEventListener('click', close);
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !lightbox.hidden) close();
+      });
+    })();
+  </script>
 
   <footer class="footer container">Basado en <code>docs/Itinerary.md</code> · versión estática para compartir</footer>
 </body>

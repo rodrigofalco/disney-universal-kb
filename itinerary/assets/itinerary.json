@@ -115,7 +115,28 @@
         "Popeye & Bluto’s Bilge-Rat Barges",
         "Dudley Do-Right’s Ripsaw Falls",
         "The Cat in the Hat"
-      ]
+      ],
+      "attractionGroups": {
+        "Hogsmeade / Wizarding World": [
+          "Hagrid’s Magical Creatures Motorbike Adventure",
+          "Harry Potter and the Forbidden Journey",
+          "Flight of the Hippogriff"
+        ],
+        "Jurassic Park": [
+          "Jurassic World VelociCoaster",
+          "Jurassic Park River Adventure"
+        ],
+        "Marvel Super Hero Island": [
+          "The Amazing Adventures of Spider-Man",
+          "The Incredible Hulk Coaster"
+        ],
+        "Skull / Toon / Seuss": [
+          "Skull Island: Reign of Kong",
+          "Popeye & Bluto’s Bilge-Rat Barges",
+          "Dudley Do-Right’s Ripsaw Falls",
+          "The Cat in the Hat"
+        ]
+      }
     },
     {
       "date": "2026-04-15",
@@ -193,7 +214,30 @@
         "Dragon Racer’s Rally",
         "Fyre Drill",
         "Constellation Carousel"
-      ]
+      ],
+      "attractionGroups": {
+        "Wizarding World / Ministry": [
+          "Harry Potter and the Battle at the Ministry"
+        ],
+        "Celestial Park": [
+          "Stardust Racers",
+          "Constellation Carousel"
+        ],
+        "Dark Universe": [
+          "Monsters Unchained: The Frankenstein Experiment",
+          "Curse of the Werewolf"
+        ],
+        "How to Train Your Dragon": [
+          "Hiccup’s Wing Gliders",
+          "Dragon Racer’s Rally",
+          "Fyre Drill"
+        ],
+        "Super Nintendo World": [
+          "Mario Kart: Bowser’s Challenge",
+          "Mine-Cart Madness",
+          "Yoshi’s Adventure"
+        ]
+      }
     },
     {
       "date": "2026-04-17",
@@ -244,7 +288,28 @@
         "Race Through New York Starring Jimmy Fallon",
         "Fast & Furious – Supercharged",
         "Hogwarts Express"
-      ]
+      ],
+      "attractionGroups": {
+        "Diagon Alley / Wizarding World": [
+          "Harry Potter and the Escape from Gringotts",
+          "Hogwarts Express"
+        ],
+        "Production / New York": [
+          "Despicable Me Minion Mayhem",
+          "Revenge of the Mummy",
+          "Race Through New York Starring Jimmy Fallon"
+        ],
+        "San Francisco / World Expo": [
+          "TRANSFORMERS: The Ride-3D",
+          "MEN IN BLACK Alien Attack",
+          "Fast & Furious – Supercharged"
+        ],
+        "Hollywood / Lagoon": [
+          "The Bourne Stuntacular",
+          "E.T. Adventure",
+          "Hollywood Rip Ride Rockit"
+        ]
+      }
     },
     {
       "date": "2026-04-18",
@@ -351,7 +416,29 @@
         "It’s Tough to Be a Bug!",
         "Gorilla Falls Exploration Trail",
         "Maharajah Jungle Trek"
-      ]
+      ],
+      "attractionGroups": {
+        "Pandora": [
+          "Avatar Flight of Passage",
+          "Na’vi River Journey"
+        ],
+        "Africa": [
+          "Kilimanjaro Safaris",
+          "Festival of the Lion King",
+          "Gorilla Falls Exploration Trail"
+        ],
+        "Asia": [
+          "Expedition Everest",
+          "Kali River Rapids",
+          "Maharajah Jungle Trek",
+          "Feathered Friends in Flight!"
+        ],
+        "DinoLand / Discovery Island": [
+          "DINOSAUR",
+          "It’s Tough to Be a Bug!",
+          "Finding Nemo: The Big Blue... and Beyond!"
+        ]
+      }
     },
     {
       "date": "2026-04-20",
@@ -428,7 +515,28 @@
         "The Seas with Nemo & Friends",
         "Journey Into Imagination With Figment",
         "Luminous The Symphony of Us"
-      ]
+      ],
+      "attractionGroups": {
+        "World Discovery": [
+          "Guardians of the Galaxy: Cosmic Rewind",
+          "Test Track",
+          "Mission: SPACE"
+        ],
+        "World Celebration": [
+          "Spaceship Earth",
+          "Journey Into Imagination With Figment"
+        ],
+        "World Nature": [
+          "Soarin’ Around the World",
+          "Living with the Land",
+          "The Seas with Nemo & Friends"
+        ],
+        "World Showcase": [
+          "Remy’s Ratatouille Adventure",
+          "Frozen Ever After",
+          "Luminous The Symphony of Us"
+        ]
+      }
     },
     {
       "date": "2026-04-21",
@@ -533,7 +641,28 @@
         "Fantasmic!",
         "Indiana Jones Epic Stunt Spectacular!",
         "For the First Time in Forever: A Frozen Sing-Along Celebration"
-      ]
+      ],
+      "attractionGroups": {
+        "Galaxy’s Edge": [
+          "Star Wars: Rise of the Resistance",
+          "Millennium Falcon: Smugglers Run"
+        ],
+        "Toy Story Land": [
+          "Slinky Dog Dash",
+          "Toy Story Mania!",
+          "Alien Swirling Saucers"
+        ],
+        "Hollywood Boulevard / Chinese Theatre": [
+          "Mickey & Minnie’s Runaway Railway"
+        ],
+        "Sunset / Echo Lake": [
+          "Rock ’n’ Roller Coaster",
+          "Fantasmic!",
+          "Indiana Jones Epic Stunt Spectacular!",
+          "For the First Time in Forever: A Frozen Sing-Along Celebration",
+          "Star Tours"
+        ]
+      }
     },
     {
       "date": "2026-04-23",
@@ -611,7 +740,31 @@
         "Buzz Lightyear’s Space Ranger Spin",
         "Festival of Fantasy Parade",
         "Happily Ever After"
-      ]
+      ],
+      "attractionGroups": {
+        "Tomorrowland": [
+          "TRON Lightcycle / Run",
+          "Space Mountain",
+          "Buzz Lightyear’s Space Ranger Spin"
+        ],
+        "Frontierland / Bayou": [
+          "Tiana’s Bayou Adventure",
+          "Big Thunder Mountain Railroad"
+        ],
+        "Liberty Square": [
+          "Haunted Mansion"
+        ],
+        "Adventureland": [
+          "Pirates of the Caribbean",
+          "Jungle Cruise"
+        ],
+        "Fantasyland / Hub": [
+          "Peter Pan’s Flight",
+          "Seven Dwarfs Mine Train",
+          "Festival of Fantasy Parade",
+          "Happily Ever After"
+        ]
+      }
     },
     {
       "date": "2026-04-24",
