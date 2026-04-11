@@ -44,23 +44,60 @@ LIGHTBOX_SCRIPT = """
       if (!lightbox) return;
       const img = lightbox.querySelector('.lightbox-image');
       const caption = lightbox.querySelector('.lightbox-caption');
-      const openers = document.querySelectorAll('.park-map-trigger');
+      const dialog = lightbox.querySelector('.lightbox-dialog');
+      const zoomInBtn = document.createElement('button');
+      zoomInBtn.type = 'button';
+      zoomInBtn.className = 'lightbox-tool';
+      zoomInBtn.textContent = '+';
+      const zoomOutBtn = document.createElement('button');
+      zoomOutBtn.type = 'button';
+      zoomOutBtn.className = 'lightbox-tool';
+      zoomOutBtn.textContent = '−';
+      const resetBtn = document.createElement('button');
+      resetBtn.type = 'button';
+      resetBtn.className = 'lightbox-tool lightbox-tool-reset';
+      resetBtn.textContent = 'Reset';
+      const controls = document.createElement('div');
+      controls.className = 'lightbox-controls';
+      controls.append(zoomOutBtn, zoomInBtn, resetBtn);
+      dialog.appendChild(controls);
+      let panzoom = null;
+      const destroyPanzoom = () => {
+        if (panzoom && panzoom.destroy) panzoom.destroy();
+        panzoom = null;
+        img.style.transform = '';
+      };
       const close = () => {
         lightbox.hidden = true;
+        destroyPanzoom();
         img.src = '';
         img.alt = '';
         caption.textContent = '';
       };
+      const openers = document.querySelectorAll('.park-map-trigger');
       openers.forEach((btn) => btn.addEventListener('click', () => {
         img.src = btn.dataset.fullSrc || '';
         img.alt = btn.dataset.title || 'Mapa ampliado';
         caption.textContent = btn.dataset.title || '';
         lightbox.hidden = false;
+        img.onload = () => {
+          destroyPanzoom();
+          panzoom = Panzoom(img, { maxScale: 5, minScale: 1, contain: 'outside' });
+        };
       }));
+      zoomInBtn.addEventListener('click', () => panzoom && panzoom.zoomIn());
+      zoomOutBtn.addEventListener('click', () => panzoom && panzoom.zoomOut());
+      resetBtn.addEventListener('click', () => panzoom && panzoom.reset());
       lightbox.querySelector('.lightbox-backdrop').addEventListener('click', close);
       lightbox.querySelector('.lightbox-close').addEventListener('click', close);
       document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && !lightbox.hidden) close();
+      });
+      const wheelTarget = lightbox.querySelector('.lightbox-image');
+      wheelTarget.parentElement.addEventListener('wheel', function (event) {
+        if (!panzoom) return;
+        event.preventDefault();
+        panzoom.zoomWithWheel(event);
       });
     })();
   </script>
@@ -92,7 +129,7 @@ for d in data['days']:
     if park_map:
         park_map_html = (
             f'<div class="timeline-block"><h3>Mapa del parque</h3>'
-            f'<p class="muted">Mini mapa para ubicar secciones, atracciones y distancias relativas. Click para ampliar.</p>'
+            f'<p class="muted">Mini mapa para ubicar secciones, atracciones y distancias relativas. Click para abrir visor con zoom.</p>'
             f'<button class="park-map-trigger" type="button" data-full-src="{esc(park_map["full"])}" data-title="Mapa de {esc(d["title"])}">'
             f'<img class="park-map-thumb" src="{esc(park_map["thumb"])}" alt="Mapa de {esc(d["title"])}" loading="lazy" /></button>'
             f'<p class="muted park-map-source">Fuente: {esc(park_map["source"])} </p></div>'
@@ -173,6 +210,7 @@ for d in data['days']:
     </section>
   </main>
 {lightbox_html}
+  <script src="../assets/panzoom.min.js"></script>
 {LIGHTBOX_SCRIPT}
   <footer class="footer container">Basado en <code>docs/Itinerary.md</code> · versión estática para compartir</footer>
 </body>

@@ -39,7 +39,7 @@
       <div class="container panel">
         <div class="detail-grid"><div class="detail-card"><strong>Fecha</strong><span>Jue 16 Apr</span></div><div class="detail-card"><strong>Fase</strong><span>Universal</span></div><div class="detail-card"><strong>Tipo</strong><span>Parque</span></div><div class="detail-card"><strong>Ubicación</strong><span>Epic Universe</span></div><div class="detail-card"><strong>Hotel</strong><span>Surfside Inn and Suites</span></div><div class="detail-card"><strong>Transporte</strong><span>Traslado hotel ↔ parque</span></div></div>
         
-        <div class="timeline-block"><h3>Mapa del parque</h3><p class="muted">Mini mapa para ubicar secciones, atracciones y distancias relativas. Click para ampliar.</p><button class="park-map-trigger" type="button" data-full-src="../assets/images/epic-map.jpg" data-title="Mapa de Epic Universe"><img class="park-map-thumb" src="../assets/images/epic-map.jpg" alt="Mapa de Epic Universe" loading="lazy" /></button><p class="muted park-map-source">Fuente: Universal official park map </p></div>
+        <div class="timeline-block"><h3>Mapa del parque</h3><p class="muted">Mini mapa para ubicar secciones, atracciones y distancias relativas. Click para abrir visor con zoom.</p><button class="park-map-trigger" type="button" data-full-src="../assets/images/epic-map.jpg" data-title="Mapa de Epic Universe"><img class="park-map-thumb" src="../assets/images/epic-map.jpg" alt="Mapa de Epic Universe" loading="lazy" /></button><p class="muted park-map-source">Fuente: Universal official park map </p></div>
         <details class="timeline-block collapsible-block attractions-details"><summary>Lista de atracciones del parque</summary><div class="attraction-group"><h4>Wizarding World / Ministry</h4><ul class="clean attractions-list"><li>Harry Potter and the Battle at the Ministry</li></ul></div><div class="attraction-group"><h4>Celestial Park</h4><ul class="clean attractions-list"><li>Stardust Racers</li><li>Constellation Carousel</li></ul></div><div class="attraction-group"><h4>Dark Universe</h4><ul class="clean attractions-list"><li>Monsters Unchained: The Frankenstein Experiment</li><li>Curse of the Werewolf</li></ul></div><div class="attraction-group"><h4>How to Train Your Dragon</h4><ul class="clean attractions-list"><li>Hiccup’s Wing Gliders</li><li>Dragon Racer’s Rally</li><li>Fyre Drill</li></ul></div><div class="attraction-group"><h4>Super Nintendo World</h4><ul class="clean attractions-list"><li>Mario Kart: Bowser’s Challenge</li><li>Mine-Cart Madness</li><li>Yoshi’s Adventure</li></ul></div></details>
         
         <div class="timeline-block"><h3>Prioridades del día</h3><ul class="clean"><li>Early Park Admission 09:00</li><li>Objetivo inicial: Battle at the Ministry</li><li>Primera mitad enfocada en headliners sensibles</li><li>Mitad de día más lenta</li><li>Segunda mitad flexible con re-rides o ambientación</li></ul></div>
@@ -59,6 +59,7 @@
     </div>
   </div>
 
+  <script src="../assets/panzoom.min.js"></script>
 
   <script>
     (function () {
@@ -66,23 +67,60 @@
       if (!lightbox) return;
       const img = lightbox.querySelector('.lightbox-image');
       const caption = lightbox.querySelector('.lightbox-caption');
-      const openers = document.querySelectorAll('.park-map-trigger');
+      const dialog = lightbox.querySelector('.lightbox-dialog');
+      const zoomInBtn = document.createElement('button');
+      zoomInBtn.type = 'button';
+      zoomInBtn.className = 'lightbox-tool';
+      zoomInBtn.textContent = '+';
+      const zoomOutBtn = document.createElement('button');
+      zoomOutBtn.type = 'button';
+      zoomOutBtn.className = 'lightbox-tool';
+      zoomOutBtn.textContent = '−';
+      const resetBtn = document.createElement('button');
+      resetBtn.type = 'button';
+      resetBtn.className = 'lightbox-tool lightbox-tool-reset';
+      resetBtn.textContent = 'Reset';
+      const controls = document.createElement('div');
+      controls.className = 'lightbox-controls';
+      controls.append(zoomOutBtn, zoomInBtn, resetBtn);
+      dialog.appendChild(controls);
+      let panzoom = null;
+      const destroyPanzoom = () => {
+        if (panzoom && panzoom.destroy) panzoom.destroy();
+        panzoom = null;
+        img.style.transform = '';
+      };
       const close = () => {
         lightbox.hidden = true;
+        destroyPanzoom();
         img.src = '';
         img.alt = '';
         caption.textContent = '';
       };
+      const openers = document.querySelectorAll('.park-map-trigger');
       openers.forEach((btn) => btn.addEventListener('click', () => {
         img.src = btn.dataset.fullSrc || '';
         img.alt = btn.dataset.title || 'Mapa ampliado';
         caption.textContent = btn.dataset.title || '';
         lightbox.hidden = false;
+        img.onload = () => {
+          destroyPanzoom();
+          panzoom = Panzoom(img, { maxScale: 5, minScale: 1, contain: 'outside' });
+        };
       }));
+      zoomInBtn.addEventListener('click', () => panzoom && panzoom.zoomIn());
+      zoomOutBtn.addEventListener('click', () => panzoom && panzoom.zoomOut());
+      resetBtn.addEventListener('click', () => panzoom && panzoom.reset());
       lightbox.querySelector('.lightbox-backdrop').addEventListener('click', close);
       lightbox.querySelector('.lightbox-close').addEventListener('click', close);
       document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && !lightbox.hidden) close();
+      });
+      const wheelTarget = lightbox.querySelector('.lightbox-image');
+      wheelTarget.parentElement.addEventListener('wheel', function (event) {
+        if (!panzoom) return;
+        event.preventDefault();
+        panzoom.zoomWithWheel(event);
       });
     })();
   </script>
