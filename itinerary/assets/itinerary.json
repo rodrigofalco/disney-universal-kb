@@ -22,22 +22,25 @@
       "location": "Neuquén → Buenos Aires → Miami",
       "type": "Vuelo",
       "hotel": "En tránsito",
-      "transport": "Vuelo NQN → AEP → EZE → MIA",
+      "transport": "Vuelo AR 1643 NQN → AEP + traslado AEP → EZE + vuelo AR 1302 EZE → MIA",
       "pace": "alto",
       "status": "confirmado",
-      "ticket": "No aplica",
+      "ticket": "Reserva DILXEB",
       "highlights": [
-        "Estructura de vuelo confirmada",
-        "Tramo internacional hacia Miami"
+        "AR 1643 — NQN 15:00 → AEP 16:40",
+        "Traslado Aeroparque → Ezeiza",
+        "AR 1302 — EZE 22:45 → MIA 07:00 +1"
       ],
       "interesting": [
-        "Llevar a mano documentos, reservas y cargadores",
-        "Pensar el primer día en Miami/Orlando como día de supervivencia, no de productividad"
+        "Ventana amplia entre AEP y EZE: 6 h 05 min entre vuelos",
+        "El traslado AEP → EZE debería presupuestarse en 1 h a 1 h 30 min",
+        "Conviene llegar a Ezeiza con margen y tratar el segundo tramo como vuelo internacional largo"
       ],
       "optional": [
-        "Preparar snack y botella reutilizable para escalas largas"
+        "Comer algo tranquilo antes del tramo internacional",
+        "Dormir lo más posible en AR 1302"
       ],
-      "notes": "Jornada completa de viaje. Si hace falta, el detalle fino de vuelos puede vivir en logística."
+      "notes": "Reserva DILXEB. Vuelo 1: AR 1643, salida NQN 15:00 y llegada AEP 16:40. Luego traslado terrestre Aeroparque → Ezeiza. Vuelo 2: AR 1302, salida EZE 22:45 y llegada MIA 07:00 del 13 Apr. Tickets: Rodrigo 0442166168102, Mariangeles 0442166168104."
     },
     {
       "date": "2026-04-13",
